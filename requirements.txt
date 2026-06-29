@@ -1,0 +1,11 @@
+# Core runtime. The engine runs fully offline with ONLY these deps.
+pydantic>=2.6
+jinja2>=3.1
+
+# Optional: the Claude reasoning backend. If `anthropic` is absent or no
+# API key is set, the agent transparently falls back to the deterministic
+# rule-based engine (see fie/agent/engine.py). The demo + eval never require it.
+# anthropic>=0.40
+
+# Dev / test
+pytest>=8.0
