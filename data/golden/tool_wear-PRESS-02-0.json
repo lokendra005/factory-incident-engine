@@ -1,0 +1,4423 @@
+{
+  "labels": {
+    "key": "tool_wear-PRESS-02-0",
+    "expected_category": "tool_wear",
+    "expected_root_cause_kw": [
+      "tool",
+      "wear",
+      "defect",
+      "quality"
+    ],
+    "key_signals": [
+      "defect_rate_pct"
+    ],
+    "expects_missing_evidence": false,
+    "asset": "PRESS-02",
+    "window_start": "2026-07-05T00:00:00+00:00",
+    "window_end": "2026-07-05T01:30:00+00:00",
+    "title": "Gradual tool wear -> rising defect rate",
+    "notes": ""
+  },
+  "bundle": {
+    "asset": "PRESS-02",
+    "window_start": "2026-07-05T00:00:00+00:00",
+    "window_end": "2026-07-05T01:30:00+00:00",
+    "readings": [
+      {
+        "id": "824ab2b70cc366af",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:00:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.951,
+        "source": "telemetry"
+      },
+      {
+        "id": "b7a7bac88d02dad1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:00:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.515,
+        "source": "telemetry"
+      },
+      {
+        "id": "221b2eff5e855f02",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:00:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.028,
+        "source": "telemetry"
+      },
+      {
+        "id": "b3dbad0b2ca8ddcc",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:00:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.784,
+        "source": "telemetry"
+      },
+      {
+        "id": "c4d5d48ea1200d36",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:00:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.257,
+        "source": "telemetry"
+      },
+      {
+        "id": "33d63c26fbd13bb1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:00:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.231,
+        "source": "telemetry"
+      },
+      {
+        "id": "576e76e6dd293dde",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:01:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.266,
+        "source": "telemetry"
+      },
+      {
+        "id": "cb2d79846a957db6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:01:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.434,
+        "source": "telemetry"
+      },
+      {
+        "id": "1f56c68bcd5d5c83",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:01:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.607,
+        "source": "telemetry"
+      },
+      {
+        "id": "f1c646bbf1341d95",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:01:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.277,
+        "source": "telemetry"
+      },
+      {
+        "id": "256f8aaa702651af",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:01:00+00:00",
+        "signal": "throughput_pph",
+        "value": 180.218,
+        "source": "telemetry"
+      },
+      {
+        "id": "393e2a1b50ab75fa",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:01:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.306,
+        "source": "telemetry"
+      },
+      {
+        "id": "0304bcae840636fd",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:02:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.115,
+        "source": "telemetry"
+      },
+      {
+        "id": "1bbbecd02b578722",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:02:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.431,
+        "source": "telemetry"
+      },
+      {
+        "id": "aa5d723f8d1ba003",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:02:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.51,
+        "source": "telemetry"
+      },
+      {
+        "id": "4119334554eb8d69",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:02:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.474,
+        "source": "telemetry"
+      },
+      {
+        "id": "1b8760ef22c653d8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:02:00+00:00",
+        "signal": "throughput_pph",
+        "value": 181.094,
+        "source": "telemetry"
+      },
+      {
+        "id": "62c591058d610acf",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:02:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.378,
+        "source": "telemetry"
+      },
+      {
+        "id": "02e439ce1d5f97e0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:03:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.615,
+        "source": "telemetry"
+      },
+      {
+        "id": "13edd28aa6b4f62d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:03:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.452,
+        "source": "telemetry"
+      },
+      {
+        "id": "9a65c4d60f16d3c0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:03:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.92,
+        "source": "telemetry"
+      },
+      {
+        "id": "d27af619fccf5906",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:03:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.613,
+        "source": "telemetry"
+      },
+      {
+        "id": "1dd3da14825331b1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:03:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.865,
+        "source": "telemetry"
+      },
+      {
+        "id": "a939fd0a6611d3ed",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:03:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.631,
+        "source": "telemetry"
+      },
+      {
+        "id": "48074f2287ac546c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:04:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.968,
+        "source": "telemetry"
+      },
+      {
+        "id": "142ff409193ecddf",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:04:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.504,
+        "source": "telemetry"
+      },
+      {
+        "id": "8b1e19ccf39793bc",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:04:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.935,
+        "source": "telemetry"
+      },
+      {
+        "id": "db82ae91a9523768",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:04:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.123,
+        "source": "telemetry"
+      },
+      {
+        "id": "9d64fb74935007f6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:04:00+00:00",
+        "signal": "throughput_pph",
+        "value": 180.585,
+        "source": "telemetry"
+      },
+      {
+        "id": "2ca2a36328455285",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:04:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.67,
+        "source": "telemetry"
+      },
+      {
+        "id": "e622d3bdda70375b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:05:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.106,
+        "source": "telemetry"
+      },
+      {
+        "id": "eb057e9c8288b19f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:05:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.465,
+        "source": "telemetry"
+      },
+      {
+        "id": "1741182830dba68b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:05:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.256,
+        "source": "telemetry"
+      },
+      {
+        "id": "753121f3d5251b46",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:05:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.446,
+        "source": "telemetry"
+      },
+      {
+        "id": "fc575eac7f75e1dc",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:05:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.562,
+        "source": "telemetry"
+      },
+      {
+        "id": "51484cf87cd9c648",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:05:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.704,
+        "source": "telemetry"
+      },
+      {
+        "id": "51f907e5e40ce35c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:06:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.265,
+        "source": "telemetry"
+      },
+      {
+        "id": "c0c1d731e4ee3baa",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:06:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.465,
+        "source": "telemetry"
+      },
+      {
+        "id": "9f908f3718202b6f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:06:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.329,
+        "source": "telemetry"
+      },
+      {
+        "id": "c06d981e027ca59e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:06:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.319,
+        "source": "telemetry"
+      },
+      {
+        "id": "0e3c0a91e26e26f6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:06:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.791,
+        "source": "telemetry"
+      },
+      {
+        "id": "56eb2a24dd4884ac",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:06:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.765,
+        "source": "telemetry"
+      },
+      {
+        "id": "cacf91088461e1af",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:07:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.917,
+        "source": "telemetry"
+      },
+      {
+        "id": "6aa6b67eeabf3ef0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:07:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.542,
+        "source": "telemetry"
+      },
+      {
+        "id": "5f754b3a5b594338",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:07:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.704,
+        "source": "telemetry"
+      },
+      {
+        "id": "0de7741fb55beb8f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:07:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.375,
+        "source": "telemetry"
+      },
+      {
+        "id": "7e472bbe2725fe14",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:07:00+00:00",
+        "signal": "throughput_pph",
+        "value": 176.763,
+        "source": "telemetry"
+      },
+      {
+        "id": "3aa0cad6a5154020",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:07:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.894,
+        "source": "telemetry"
+      },
+      {
+        "id": "461209b00871c04c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:08:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.904,
+        "source": "telemetry"
+      },
+      {
+        "id": "86f08311e76e5931",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:08:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.511,
+        "source": "telemetry"
+      },
+      {
+        "id": "b40d79ab2b3267a9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:08:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 64.364,
+        "source": "telemetry"
+      },
+      {
+        "id": "1893410ec8e8495c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:08:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.552,
+        "source": "telemetry"
+      },
+      {
+        "id": "168bade36dd6ad8a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:08:00+00:00",
+        "signal": "throughput_pph",
+        "value": 176.062,
+        "source": "telemetry"
+      },
+      {
+        "id": "4b1297aa70e909f5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:08:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.209,
+        "source": "telemetry"
+      },
+      {
+        "id": "0dd2e0be9344910f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:09:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.958,
+        "source": "telemetry"
+      },
+      {
+        "id": "7aef8927c64cea49",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:09:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.522,
+        "source": "telemetry"
+      },
+      {
+        "id": "699f331f2b6e1761",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:09:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.124,
+        "source": "telemetry"
+      },
+      {
+        "id": "c1098c5473fe50f0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:09:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.348,
+        "source": "telemetry"
+      },
+      {
+        "id": "8f8c688c0aa6c8ee",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:09:00+00:00",
+        "signal": "throughput_pph",
+        "value": 180.833,
+        "source": "telemetry"
+      },
+      {
+        "id": "b95b0db087355494",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:09:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.16,
+        "source": "telemetry"
+      },
+      {
+        "id": "33a0c39226afbd57",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:10:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.557,
+        "source": "telemetry"
+      },
+      {
+        "id": "e07c8577e6b49ef4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:10:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.612,
+        "source": "telemetry"
+      },
+      {
+        "id": "02cc59c2d26ce0c2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:10:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.93,
+        "source": "telemetry"
+      },
+      {
+        "id": "77c77d9afef7f9a2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:10:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.423,
+        "source": "telemetry"
+      },
+      {
+        "id": "2800510fcf68f53d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:10:00+00:00",
+        "signal": "throughput_pph",
+        "value": 174.64,
+        "source": "telemetry"
+      },
+      {
+        "id": "d1f9d3db6fde0168",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:10:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.318,
+        "source": "telemetry"
+      },
+      {
+        "id": "556bce9815b27808",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:11:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.07,
+        "source": "telemetry"
+      },
+      {
+        "id": "a25610e7cc474e1e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:11:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.49,
+        "source": "telemetry"
+      },
+      {
+        "id": "09eb6fb0011c2741",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:11:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.874,
+        "source": "telemetry"
+      },
+      {
+        "id": "e0ec3569a1d58f79",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:11:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.613,
+        "source": "telemetry"
+      },
+      {
+        "id": "9357caed1fe06f6e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:11:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.768,
+        "source": "telemetry"
+      },
+      {
+        "id": "f645f289704fc7f0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:11:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.361,
+        "source": "telemetry"
+      },
+      {
+        "id": "4b30b7329af00aaa",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:12:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.182,
+        "source": "telemetry"
+      },
+      {
+        "id": "b6b920a1a42c547b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:12:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.369,
+        "source": "telemetry"
+      },
+      {
+        "id": "34004492fd54e05d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:12:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.2,
+        "source": "telemetry"
+      },
+      {
+        "id": "2ffb66c69c9b2232",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:12:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.472,
+        "source": "telemetry"
+      },
+      {
+        "id": "5af8d36b0372bd6c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:12:00+00:00",
+        "signal": "throughput_pph",
+        "value": 176.745,
+        "source": "telemetry"
+      },
+      {
+        "id": "5566c3714afb799d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:12:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.522,
+        "source": "telemetry"
+      },
+      {
+        "id": "48e9e6690df4ce7f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:13:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.512,
+        "source": "telemetry"
+      },
+      {
+        "id": "4662784385c3145b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:13:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.522,
+        "source": "telemetry"
+      },
+      {
+        "id": "078c2775ab71be1a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:13:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.204,
+        "source": "telemetry"
+      },
+      {
+        "id": "ab49df82e6008ed3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:13:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.877,
+        "source": "telemetry"
+      },
+      {
+        "id": "aea495271b147bd9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:13:00+00:00",
+        "signal": "throughput_pph",
+        "value": 179.113,
+        "source": "telemetry"
+      },
+      {
+        "id": "7393425cb91ffa58",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:13:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.622,
+        "source": "telemetry"
+      },
+      {
+        "id": "316b1fb1dc9d47e5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:14:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 57.001,
+        "source": "telemetry"
+      },
+      {
+        "id": "653ca648bbcc1038",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:14:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.365,
+        "source": "telemetry"
+      },
+      {
+        "id": "0572cb962e3959f2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:14:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.361,
+        "source": "telemetry"
+      },
+      {
+        "id": "953448f5ef9d0d3b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:14:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.772,
+        "source": "telemetry"
+      },
+      {
+        "id": "fcc219dec1f4f73b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:14:00+00:00",
+        "signal": "throughput_pph",
+        "value": 175.718,
+        "source": "telemetry"
+      },
+      {
+        "id": "5e99468a98e3d726",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:14:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.783,
+        "source": "telemetry"
+      },
+      {
+        "id": "abce2954d3677316",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:15:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.646,
+        "source": "telemetry"
+      },
+      {
+        "id": "4d5d4280c935a288",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:15:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.444,
+        "source": "telemetry"
+      },
+      {
+        "id": "3d34edd2c9095511",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:15:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.811,
+        "source": "telemetry"
+      },
+      {
+        "id": "22661cda2406d22d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:15:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.782,
+        "source": "telemetry"
+      },
+      {
+        "id": "daab3825fe232b34",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:15:00+00:00",
+        "signal": "throughput_pph",
+        "value": 176.334,
+        "source": "telemetry"
+      },
+      {
+        "id": "ce03ddf8bf6079e6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:15:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.798,
+        "source": "telemetry"
+      },
+      {
+        "id": "7730b7cb69aed48a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:16:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.671,
+        "source": "telemetry"
+      },
+      {
+        "id": "708b707430d450f3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:16:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.491,
+        "source": "telemetry"
+      },
+      {
+        "id": "dd9c5fefe9982966",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:16:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.979,
+        "source": "telemetry"
+      },
+      {
+        "id": "c9bebb6f28a03ff1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:16:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.896,
+        "source": "telemetry"
+      },
+      {
+        "id": "9e128e96d9936659",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:16:00+00:00",
+        "signal": "throughput_pph",
+        "value": 175.537,
+        "source": "telemetry"
+      },
+      {
+        "id": "544c2b159db39dde",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:16:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.826,
+        "source": "telemetry"
+      },
+      {
+        "id": "b5b9bceae1b50dbf",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:17:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.138,
+        "source": "telemetry"
+      },
+      {
+        "id": "c5882786def04c55",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:17:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.574,
+        "source": "telemetry"
+      },
+      {
+        "id": "d4c97f77666f1c55",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:17:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.231,
+        "source": "telemetry"
+      },
+      {
+        "id": "b464edd68cafdce6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:17:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.401,
+        "source": "telemetry"
+      },
+      {
+        "id": "ca46d520e4becdc0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:17:00+00:00",
+        "signal": "throughput_pph",
+        "value": 172.395,
+        "source": "telemetry"
+      },
+      {
+        "id": "39c4a6f4eba9127f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:17:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.144,
+        "source": "telemetry"
+      },
+      {
+        "id": "c598eff02fea84c2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:18:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.144,
+        "source": "telemetry"
+      },
+      {
+        "id": "7bdd8d0b91b6de3d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:18:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.411,
+        "source": "telemetry"
+      },
+      {
+        "id": "293f8cde1af247ed",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:18:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.162,
+        "source": "telemetry"
+      },
+      {
+        "id": "10195e3d10a2f69c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:18:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.999,
+        "source": "telemetry"
+      },
+      {
+        "id": "1a386cc922e00107",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:18:00+00:00",
+        "signal": "throughput_pph",
+        "value": 172.81,
+        "source": "telemetry"
+      },
+      {
+        "id": "8502daab44d3e865",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:18:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.175,
+        "source": "telemetry"
+      },
+      {
+        "id": "11cd29aabccb2805",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:19:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.001,
+        "source": "telemetry"
+      },
+      {
+        "id": "e8645ad343602b8a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:19:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.434,
+        "source": "telemetry"
+      },
+      {
+        "id": "b1e859745f19deb7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:19:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.367,
+        "source": "telemetry"
+      },
+      {
+        "id": "22c9a3c59129fdf0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:19:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.897,
+        "source": "telemetry"
+      },
+      {
+        "id": "f81edf9f6d9e0870",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:19:00+00:00",
+        "signal": "throughput_pph",
+        "value": 169.646,
+        "source": "telemetry"
+      },
+      {
+        "id": "4ba310a86179e533",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:19:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.243,
+        "source": "telemetry"
+      },
+      {
+        "id": "8f46b3fb8cc21dd0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:20:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.595,
+        "source": "telemetry"
+      },
+      {
+        "id": "23eda3eaa8b8e561",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:20:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.523,
+        "source": "telemetry"
+      },
+      {
+        "id": "7f3b9e1ee3373b81",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:20:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.374,
+        "source": "telemetry"
+      },
+      {
+        "id": "d9c275beaf551ff1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:20:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.726,
+        "source": "telemetry"
+      },
+      {
+        "id": "68dcde41b0f99b33",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:20:00+00:00",
+        "signal": "throughput_pph",
+        "value": 169.723,
+        "source": "telemetry"
+      },
+      {
+        "id": "1817212e9e2b5068",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:20:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.379,
+        "source": "telemetry"
+      },
+      {
+        "id": "4098cdddce5d82e6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:21:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.629,
+        "source": "telemetry"
+      },
+      {
+        "id": "bc926f0ebbbde944",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:21:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.452,
+        "source": "telemetry"
+      },
+      {
+        "id": "6c83c6a243f66834",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:21:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.586,
+        "source": "telemetry"
+      },
+      {
+        "id": "082944908d073f26",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:21:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.406,
+        "source": "telemetry"
+      },
+      {
+        "id": "d415f80b9dc82a64",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:21:00+00:00",
+        "signal": "throughput_pph",
+        "value": 169.411,
+        "source": "telemetry"
+      },
+      {
+        "id": "ebbd8e4a38ffe75b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:21:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.415,
+        "source": "telemetry"
+      },
+      {
+        "id": "188fd5ebfa370d4f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:22:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.16,
+        "source": "telemetry"
+      },
+      {
+        "id": "c65f361ead0ec522",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:22:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.465,
+        "source": "telemetry"
+      },
+      {
+        "id": "89357cafed84b6bf",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:22:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.224,
+        "source": "telemetry"
+      },
+      {
+        "id": "b3f8b2dd35ea9d73",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:22:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.236,
+        "source": "telemetry"
+      },
+      {
+        "id": "11881897213c2d21",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:22:00+00:00",
+        "signal": "throughput_pph",
+        "value": 172.152,
+        "source": "telemetry"
+      },
+      {
+        "id": "c1a3c01792874612",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:22:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.627,
+        "source": "telemetry"
+      },
+      {
+        "id": "449949267aa3c972",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:23:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.713,
+        "source": "telemetry"
+      },
+      {
+        "id": "3b9cb1940b6494e3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:23:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.555,
+        "source": "telemetry"
+      },
+      {
+        "id": "a573c87401007771",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:23:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.597,
+        "source": "telemetry"
+      },
+      {
+        "id": "8f9fb234b53f665f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:23:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.87,
+        "source": "telemetry"
+      },
+      {
+        "id": "e359bdf6d2f83abe",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:23:00+00:00",
+        "signal": "throughput_pph",
+        "value": 173.88,
+        "source": "telemetry"
+      },
+      {
+        "id": "d0fc77b4a6b1e1d0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:23:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.674,
+        "source": "telemetry"
+      },
+      {
+        "id": "31f346b339f1471f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:24:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.087,
+        "source": "telemetry"
+      },
+      {
+        "id": "a371229e7565a088",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:24:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.497,
+        "source": "telemetry"
+      },
+      {
+        "id": "10fe72ab380d2353",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:24:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.811,
+        "source": "telemetry"
+      },
+      {
+        "id": "a527ed36cb6cf636",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:24:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.915,
+        "source": "telemetry"
+      },
+      {
+        "id": "79d8deefa046f6fc",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:24:00+00:00",
+        "signal": "throughput_pph",
+        "value": 171.354,
+        "source": "telemetry"
+      },
+      {
+        "id": "96d3dd057894974d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:24:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.873,
+        "source": "telemetry"
+      },
+      {
+        "id": "195e996df07ace8f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:25:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.598,
+        "source": "telemetry"
+      },
+      {
+        "id": "566ce47df844a9a8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:25:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.432,
+        "source": "telemetry"
+      },
+      {
+        "id": "f323f946048d9fd8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:25:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.395,
+        "source": "telemetry"
+      },
+      {
+        "id": "77934526a0ba72a4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:25:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.274,
+        "source": "telemetry"
+      },
+      {
+        "id": "2db1d4e5c57f02c1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:25:00+00:00",
+        "signal": "throughput_pph",
+        "value": 170.827,
+        "source": "telemetry"
+      },
+      {
+        "id": "47a4f9b8c25db7a6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:25:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.889,
+        "source": "telemetry"
+      },
+      {
+        "id": "c7b18ca9e6ddb23f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:26:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.372,
+        "source": "telemetry"
+      },
+      {
+        "id": "3cf578197f043221",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:26:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.562,
+        "source": "telemetry"
+      },
+      {
+        "id": "ea6fa04d55be1c06",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:26:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 59.338,
+        "source": "telemetry"
+      },
+      {
+        "id": "d87091aea05d86f2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:26:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.999,
+        "source": "telemetry"
+      },
+      {
+        "id": "eff02d2861bd3cf5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:26:00+00:00",
+        "signal": "throughput_pph",
+        "value": 175.131,
+        "source": "telemetry"
+      },
+      {
+        "id": "50a9f87f7d2e0f95",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:26:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.989,
+        "source": "telemetry"
+      },
+      {
+        "id": "95057aa66bb4ec50",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:27:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.393,
+        "source": "telemetry"
+      },
+      {
+        "id": "ca3e7e2d9144e8df",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:27:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.537,
+        "source": "telemetry"
+      },
+      {
+        "id": "3c8cff66c0000cf9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:27:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.309,
+        "source": "telemetry"
+      },
+      {
+        "id": "102a4da8e50be694",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:27:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.827,
+        "source": "telemetry"
+      },
+      {
+        "id": "e8a6ba6e78fe640d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:27:00+00:00",
+        "signal": "throughput_pph",
+        "value": 172.311,
+        "source": "telemetry"
+      },
+      {
+        "id": "92bda04eb48ed2ca",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:27:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.109,
+        "source": "telemetry"
+      },
+      {
+        "id": "5d88ff396ad48fc6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:28:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.454,
+        "source": "telemetry"
+      },
+      {
+        "id": "a96d695565d0852d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:28:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.436,
+        "source": "telemetry"
+      },
+      {
+        "id": "dfa91330ed26fa2c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:28:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.891,
+        "source": "telemetry"
+      },
+      {
+        "id": "5b7b3684551c0058",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:28:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.343,
+        "source": "telemetry"
+      },
+      {
+        "id": "8c28588cdade2230",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:28:00+00:00",
+        "signal": "throughput_pph",
+        "value": 165.209,
+        "source": "telemetry"
+      },
+      {
+        "id": "efa08d10dc89a1e7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:28:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.224,
+        "source": "telemetry"
+      },
+      {
+        "id": "72aa9d4b873c0b4c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:29:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.542,
+        "source": "telemetry"
+      },
+      {
+        "id": "6769243de37f0124",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:29:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.522,
+        "source": "telemetry"
+      },
+      {
+        "id": "166ad478438a7552",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:29:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.108,
+        "source": "telemetry"
+      },
+      {
+        "id": "895963bc20b20c71",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:29:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.562,
+        "source": "telemetry"
+      },
+      {
+        "id": "44b53f601a94704d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:29:00+00:00",
+        "signal": "throughput_pph",
+        "value": 171.534,
+        "source": "telemetry"
+      },
+      {
+        "id": "b793a65ce6e53a9c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:29:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.276,
+        "source": "telemetry"
+      },
+      {
+        "id": "cf664fb187cbdde0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:30:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.086,
+        "source": "telemetry"
+      },
+      {
+        "id": "f045dbcb95fddd7a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:30:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.525,
+        "source": "telemetry"
+      },
+      {
+        "id": "0251775b9182243a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:30:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.937,
+        "source": "telemetry"
+      },
+      {
+        "id": "0459cb62afde2110",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:30:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.403,
+        "source": "telemetry"
+      },
+      {
+        "id": "49ed806cde3043d7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:30:00+00:00",
+        "signal": "throughput_pph",
+        "value": 166.053,
+        "source": "telemetry"
+      },
+      {
+        "id": "2c4577fea460860b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:30:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.474,
+        "source": "telemetry"
+      },
+      {
+        "id": "c2755cac0d8c2049",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:31:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.043,
+        "source": "telemetry"
+      },
+      {
+        "id": "1ff31da2b390db7f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:31:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.5,
+        "source": "telemetry"
+      },
+      {
+        "id": "1b943055d1281cf2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:31:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.682,
+        "source": "telemetry"
+      },
+      {
+        "id": "c2580b46f60c1fb2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:31:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.269,
+        "source": "telemetry"
+      },
+      {
+        "id": "371fa15362e24317",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:31:00+00:00",
+        "signal": "throughput_pph",
+        "value": 171.118,
+        "source": "telemetry"
+      },
+      {
+        "id": "05c5c589ae79143d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:31:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.471,
+        "source": "telemetry"
+      },
+      {
+        "id": "685d2888c8967860",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:32:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.301,
+        "source": "telemetry"
+      },
+      {
+        "id": "4077effba91226e8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:32:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.465,
+        "source": "telemetry"
+      },
+      {
+        "id": "3b98f5a30bb26496",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:32:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.374,
+        "source": "telemetry"
+      },
+      {
+        "id": "ce831ff6a69ae323",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:32:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.011,
+        "source": "telemetry"
+      },
+      {
+        "id": "066992561d142dc5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:32:00+00:00",
+        "signal": "throughput_pph",
+        "value": 168.05,
+        "source": "telemetry"
+      },
+      {
+        "id": "f5b7d1b47cd60b3f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:32:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.759,
+        "source": "telemetry"
+      },
+      {
+        "id": "ab1f366e476088f4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:33:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.523,
+        "source": "telemetry"
+      },
+      {
+        "id": "f90d8ba6116cd34c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:33:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.603,
+        "source": "telemetry"
+      },
+      {
+        "id": "98866f5d98dbc1ec",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:33:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.732,
+        "source": "telemetry"
+      },
+      {
+        "id": "8c7118b5dff18064",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:33:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.168,
+        "source": "telemetry"
+      },
+      {
+        "id": "e14a4977f18ef0c9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:33:00+00:00",
+        "signal": "throughput_pph",
+        "value": 173.038,
+        "source": "telemetry"
+      },
+      {
+        "id": "f2e317833729f6fe",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:33:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.832,
+        "source": "telemetry"
+      },
+      {
+        "id": "197b73b4dab64dbb",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:34:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.557,
+        "source": "telemetry"
+      },
+      {
+        "id": "89a14c3507e58b60",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:34:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.455,
+        "source": "telemetry"
+      },
+      {
+        "id": "efa33bcd5a400627",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:34:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.219,
+        "source": "telemetry"
+      },
+      {
+        "id": "3f19a55be0963ee6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:34:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.11,
+        "source": "telemetry"
+      },
+      {
+        "id": "5915d44055c5972d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:34:00+00:00",
+        "signal": "throughput_pph",
+        "value": 163.317,
+        "source": "telemetry"
+      },
+      {
+        "id": "f4e4986e20734be8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:34:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.89,
+        "source": "telemetry"
+      },
+      {
+        "id": "cf1f338ca5b3d048",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:35:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.079,
+        "source": "telemetry"
+      },
+      {
+        "id": "66cf9afbd7cb6768",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:35:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.515,
+        "source": "telemetry"
+      },
+      {
+        "id": "82be71dfe3c900b5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:35:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.493,
+        "source": "telemetry"
+      },
+      {
+        "id": "38c1d4cfde2c0365",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:35:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.341,
+        "source": "telemetry"
+      },
+      {
+        "id": "27bb2a8f03e9e13b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:35:00+00:00",
+        "signal": "throughput_pph",
+        "value": 164.328,
+        "source": "telemetry"
+      },
+      {
+        "id": "798be512f2a1038d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:35:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.0,
+        "source": "telemetry"
+      },
+      {
+        "id": "f6403296aea4be01",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:36:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.13,
+        "source": "telemetry"
+      },
+      {
+        "id": "8ac56992634de5d5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:36:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.458,
+        "source": "telemetry"
+      },
+      {
+        "id": "9d10901e40d46654",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:36:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.369,
+        "source": "telemetry"
+      },
+      {
+        "id": "29291af8e665531c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:36:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.947,
+        "source": "telemetry"
+      },
+      {
+        "id": "f1b8bcd58b8a01da",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:36:00+00:00",
+        "signal": "throughput_pph",
+        "value": 168.16,
+        "source": "telemetry"
+      },
+      {
+        "id": "738d14197478542a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:36:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.127,
+        "source": "telemetry"
+      },
+      {
+        "id": "6672b3828e1e5736",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:37:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.992,
+        "source": "telemetry"
+      },
+      {
+        "id": "5b4f2bcb543dee8e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:37:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.586,
+        "source": "telemetry"
+      },
+      {
+        "id": "804712d5b6eae592",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:37:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.254,
+        "source": "telemetry"
+      },
+      {
+        "id": "b015a3a3a8285785",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:37:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.536,
+        "source": "telemetry"
+      },
+      {
+        "id": "4e4cb32d03e033ed",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:37:00+00:00",
+        "signal": "throughput_pph",
+        "value": 168.296,
+        "source": "telemetry"
+      },
+      {
+        "id": "3bbc6dfbdb9364e7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:37:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.24,
+        "source": "telemetry"
+      },
+      {
+        "id": "d7e33f6e1cf1326c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:38:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.391,
+        "source": "telemetry"
+      },
+      {
+        "id": "7d5cfe8c0ae925fe",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:38:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.494,
+        "source": "telemetry"
+      },
+      {
+        "id": "33c2b0cc31bdba6a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:38:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.998,
+        "source": "telemetry"
+      },
+      {
+        "id": "014d9bcabbc21a3e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:38:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.366,
+        "source": "telemetry"
+      },
+      {
+        "id": "5e67091702d9d9c5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:38:00+00:00",
+        "signal": "throughput_pph",
+        "value": 168.245,
+        "source": "telemetry"
+      },
+      {
+        "id": "de8a0494240e3597",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:38:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.348,
+        "source": "telemetry"
+      },
+      {
+        "id": "69a65e65905466c3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:39:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.373,
+        "source": "telemetry"
+      },
+      {
+        "id": "45cec7ba5876afea",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:39:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.499,
+        "source": "telemetry"
+      },
+      {
+        "id": "6046c1ba2f195417",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:39:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.053,
+        "source": "telemetry"
+      },
+      {
+        "id": "bf28fc767cab9592",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:39:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.321,
+        "source": "telemetry"
+      },
+      {
+        "id": "a3e733e595850f1e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:39:00+00:00",
+        "signal": "throughput_pph",
+        "value": 167.904,
+        "source": "telemetry"
+      },
+      {
+        "id": "5811a8710fca09e5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:39:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.34,
+        "source": "telemetry"
+      },
+      {
+        "id": "aa62192be24d5914",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:40:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.915,
+        "source": "telemetry"
+      },
+      {
+        "id": "0045ab5a4e8df6b2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:40:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.503,
+        "source": "telemetry"
+      },
+      {
+        "id": "ac4d4c4504d5ee32",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:40:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.813,
+        "source": "telemetry"
+      },
+      {
+        "id": "cac4b893aa6aa81e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:40:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.07,
+        "source": "telemetry"
+      },
+      {
+        "id": "c9edaea71f579b9c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:40:00+00:00",
+        "signal": "throughput_pph",
+        "value": 167.542,
+        "source": "telemetry"
+      },
+      {
+        "id": "b08cc344f939e0c4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:40:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.559,
+        "source": "telemetry"
+      },
+      {
+        "id": "7db82b45126ae4fc",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:41:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.184,
+        "source": "telemetry"
+      },
+      {
+        "id": "96b97cd377deb3d3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:41:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.5,
+        "source": "telemetry"
+      },
+      {
+        "id": "435e021dbdb0172c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:41:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.624,
+        "source": "telemetry"
+      },
+      {
+        "id": "4f3561a8df3f2919",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:41:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.829,
+        "source": "telemetry"
+      },
+      {
+        "id": "cb0c60c2c1f0b351",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:41:00+00:00",
+        "signal": "throughput_pph",
+        "value": 170.149,
+        "source": "telemetry"
+      },
+      {
+        "id": "6b3c8c84b42b69c9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:41:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.648,
+        "source": "telemetry"
+      },
+      {
+        "id": "8393927b17d7f7d4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:42:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.481,
+        "source": "telemetry"
+      },
+      {
+        "id": "36fb8d1ab448ec58",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:42:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.404,
+        "source": "telemetry"
+      },
+      {
+        "id": "84cecbe680742411",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:42:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.131,
+        "source": "telemetry"
+      },
+      {
+        "id": "717649db6e0ca197",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:42:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.027,
+        "source": "telemetry"
+      },
+      {
+        "id": "58276795c93868a8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:42:00+00:00",
+        "signal": "throughput_pph",
+        "value": 163.454,
+        "source": "telemetry"
+      },
+      {
+        "id": "6beb59f522a37233",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:42:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.82,
+        "source": "telemetry"
+      },
+      {
+        "id": "476bc6a24027324a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:43:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.463,
+        "source": "telemetry"
+      },
+      {
+        "id": "11357e66c6ffb268",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:43:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.507,
+        "source": "telemetry"
+      },
+      {
+        "id": "353df17489608a5c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:43:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.243,
+        "source": "telemetry"
+      },
+      {
+        "id": "ea61bfb75cd6e907",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:43:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.281,
+        "source": "telemetry"
+      },
+      {
+        "id": "e5e96c90e9a0311d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:43:00+00:00",
+        "signal": "throughput_pph",
+        "value": 163.837,
+        "source": "telemetry"
+      },
+      {
+        "id": "0bbb55dde4296bdf",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:43:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.905,
+        "source": "telemetry"
+      },
+      {
+        "id": "933aaf8ee99de759",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:44:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.767,
+        "source": "telemetry"
+      },
+      {
+        "id": "6844d211fbfb945c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:44:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.412,
+        "source": "telemetry"
+      },
+      {
+        "id": "3260bbccddf9d590",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:44:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 59.004,
+        "source": "telemetry"
+      },
+      {
+        "id": "297aa1d778894eff",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:44:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.604,
+        "source": "telemetry"
+      },
+      {
+        "id": "79882b37f7f11d1f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:44:00+00:00",
+        "signal": "throughput_pph",
+        "value": 164.251,
+        "source": "telemetry"
+      },
+      {
+        "id": "0849cfce2b519c70",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:44:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.003,
+        "source": "telemetry"
+      },
+      {
+        "id": "ca900797010d1f12",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:45:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.626,
+        "source": "telemetry"
+      },
+      {
+        "id": "a8a542364b806ff5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:45:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.528,
+        "source": "telemetry"
+      },
+      {
+        "id": "2bbcf2ec838341b0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:45:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.863,
+        "source": "telemetry"
+      },
+      {
+        "id": "e3159a0aa57f5314",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:45:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.298,
+        "source": "telemetry"
+      },
+      {
+        "id": "119935ba5fad3129",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:45:00+00:00",
+        "signal": "throughput_pph",
+        "value": 164.426,
+        "source": "telemetry"
+      },
+      {
+        "id": "76067ed934dcf94b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:45:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.061,
+        "source": "telemetry"
+      },
+      {
+        "id": "9dbc53aa499a7603",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:46:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.522,
+        "source": "telemetry"
+      },
+      {
+        "id": "dce859f1fbde9e32",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:46:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.455,
+        "source": "telemetry"
+      },
+      {
+        "id": "2fe9dbd21061da1e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:46:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.153,
+        "source": "telemetry"
+      },
+      {
+        "id": "9900aef18ba36273",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:46:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.475,
+        "source": "telemetry"
+      },
+      {
+        "id": "8d57f23a4be6d7a8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:46:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.033,
+        "source": "telemetry"
+      },
+      {
+        "id": "48c9e4feafd44b0d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:46:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.321,
+        "source": "telemetry"
+      },
+      {
+        "id": "26e02a0b4c34dd4a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:47:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.559,
+        "source": "telemetry"
+      },
+      {
+        "id": "5441600c0c4fdaee",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:47:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.489,
+        "source": "telemetry"
+      },
+      {
+        "id": "7a61364acc7b317c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:47:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.242,
+        "source": "telemetry"
+      },
+      {
+        "id": "d851316136f6a89b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:47:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.757,
+        "source": "telemetry"
+      },
+      {
+        "id": "be8b35c679b89422",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:47:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.264,
+        "source": "telemetry"
+      },
+      {
+        "id": "66a3f3ccce802e9a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:47:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.326,
+        "source": "telemetry"
+      },
+      {
+        "id": "70aeedeb4c079b5d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:48:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.65,
+        "source": "telemetry"
+      },
+      {
+        "id": "f0e5602545e642ce",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:48:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.433,
+        "source": "telemetry"
+      },
+      {
+        "id": "1f41de76ae26b9f4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:48:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.373,
+        "source": "telemetry"
+      },
+      {
+        "id": "e0e22378bff8b61b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:48:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.903,
+        "source": "telemetry"
+      },
+      {
+        "id": "5bb788d1dae04eb6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:48:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.708,
+        "source": "telemetry"
+      },
+      {
+        "id": "95c28bafccbdba19",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:48:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.363,
+        "source": "telemetry"
+      },
+      {
+        "id": "983c42a6e182bf6a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:49:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.731,
+        "source": "telemetry"
+      },
+      {
+        "id": "15e13a7085bed9cc",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:49:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.592,
+        "source": "telemetry"
+      },
+      {
+        "id": "bbca42ed77396d30",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:49:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.482,
+        "source": "telemetry"
+      },
+      {
+        "id": "3e48f47ef1323a13",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:49:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.825,
+        "source": "telemetry"
+      },
+      {
+        "id": "168b133868b65db3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:49:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.797,
+        "source": "telemetry"
+      },
+      {
+        "id": "d32a5fe60dbe7f1b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:49:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.513,
+        "source": "telemetry"
+      },
+      {
+        "id": "c6f94a720e6db792",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:50:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.513,
+        "source": "telemetry"
+      },
+      {
+        "id": "cad9c3769bd3a19b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:50:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.523,
+        "source": "telemetry"
+      },
+      {
+        "id": "d33de0e23ac0644b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:50:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.018,
+        "source": "telemetry"
+      },
+      {
+        "id": "ad452acb0e805386",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:50:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.405,
+        "source": "telemetry"
+      },
+      {
+        "id": "e3b808ad24931c13",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:50:00+00:00",
+        "signal": "throughput_pph",
+        "value": 166.281,
+        "source": "telemetry"
+      },
+      {
+        "id": "28f185fcb7fd8b82",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:50:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.723,
+        "source": "telemetry"
+      },
+      {
+        "id": "70b472f745d34562",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:51:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.366,
+        "source": "telemetry"
+      },
+      {
+        "id": "533e1537c51c705b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:51:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.462,
+        "source": "telemetry"
+      },
+      {
+        "id": "5ab4df78bbbdd8c3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:51:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.795,
+        "source": "telemetry"
+      },
+      {
+        "id": "06d0b807ed6e3f9f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:51:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.309,
+        "source": "telemetry"
+      },
+      {
+        "id": "84d13b5a0caf3ec0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:51:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.491,
+        "source": "telemetry"
+      },
+      {
+        "id": "879b10dc7d8fba55",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:51:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.7,
+        "source": "telemetry"
+      },
+      {
+        "id": "de49ef2766e86a1c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:52:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.599,
+        "source": "telemetry"
+      },
+      {
+        "id": "6aa43a9b1c5cf3dd",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:52:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.39,
+        "source": "telemetry"
+      },
+      {
+        "id": "2b86df1fde515aaf",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:52:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.364,
+        "source": "telemetry"
+      },
+      {
+        "id": "81e35d0cc18bafe7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:52:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.516,
+        "source": "telemetry"
+      },
+      {
+        "id": "53a5bde0991bcbf2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:52:00+00:00",
+        "signal": "throughput_pph",
+        "value": 165.773,
+        "source": "telemetry"
+      },
+      {
+        "id": "d7b3a8365c730d08",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:52:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.89,
+        "source": "telemetry"
+      },
+      {
+        "id": "b6b7a7d853dacb3a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:53:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.402,
+        "source": "telemetry"
+      },
+      {
+        "id": "985b116a08421296",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:53:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.497,
+        "source": "telemetry"
+      },
+      {
+        "id": "d326524539d6efbd",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:53:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.205,
+        "source": "telemetry"
+      },
+      {
+        "id": "4908211e47943b31",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:53:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.209,
+        "source": "telemetry"
+      },
+      {
+        "id": "c44d285d5e3beaa6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:53:00+00:00",
+        "signal": "throughput_pph",
+        "value": 163.251,
+        "source": "telemetry"
+      },
+      {
+        "id": "ef2aa324911b5d33",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:53:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.98,
+        "source": "telemetry"
+      },
+      {
+        "id": "e3105241cec18884",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:54:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.442,
+        "source": "telemetry"
+      },
+      {
+        "id": "f4bf796515359902",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:54:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.536,
+        "source": "telemetry"
+      },
+      {
+        "id": "27d78310c9e68035",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:54:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.924,
+        "source": "telemetry"
+      },
+      {
+        "id": "447191e686c8cf04",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:54:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.748,
+        "source": "telemetry"
+      },
+      {
+        "id": "090559dcdc33b3e1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:54:00+00:00",
+        "signal": "throughput_pph",
+        "value": 166.737,
+        "source": "telemetry"
+      },
+      {
+        "id": "0c2af3861f438ca5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:54:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.057,
+        "source": "telemetry"
+      },
+      {
+        "id": "f6a9a6595d27d565",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:55:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.527,
+        "source": "telemetry"
+      },
+      {
+        "id": "f178d39dee375f30",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:55:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.453,
+        "source": "telemetry"
+      },
+      {
+        "id": "b9ea16c727a6af06",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:55:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.063,
+        "source": "telemetry"
+      },
+      {
+        "id": "63c4765dcaf2a0c1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:55:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.897,
+        "source": "telemetry"
+      },
+      {
+        "id": "8cec0f9af3a6f1d5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:55:00+00:00",
+        "signal": "throughput_pph",
+        "value": 159.762,
+        "source": "telemetry"
+      },
+      {
+        "id": "64a270d2d4e7f086",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:55:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.19,
+        "source": "telemetry"
+      },
+      {
+        "id": "a103b78dbb2152e9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:56:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.27,
+        "source": "telemetry"
+      },
+      {
+        "id": "7b8a9df30fb813de",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:56:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.488,
+        "source": "telemetry"
+      },
+      {
+        "id": "c4aba31f8e17c9b2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:56:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.401,
+        "source": "telemetry"
+      },
+      {
+        "id": "77fbab443fb33c93",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:56:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.219,
+        "source": "telemetry"
+      },
+      {
+        "id": "75121345738384d3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:56:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.441,
+        "source": "telemetry"
+      },
+      {
+        "id": "8bb9da93fd0c4c8e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:56:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.347,
+        "source": "telemetry"
+      },
+      {
+        "id": "c53ce3d8dddbb6c4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:57:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.63,
+        "source": "telemetry"
+      },
+      {
+        "id": "be7363d341e53f8c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:57:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.551,
+        "source": "telemetry"
+      },
+      {
+        "id": "4b191084a3729965",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:57:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.451,
+        "source": "telemetry"
+      },
+      {
+        "id": "4217e6cf68936bb8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:57:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.182,
+        "source": "telemetry"
+      },
+      {
+        "id": "42da35749c4807d9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:57:00+00:00",
+        "signal": "throughput_pph",
+        "value": 160.898,
+        "source": "telemetry"
+      },
+      {
+        "id": "e446d743786cc095",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:57:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.443,
+        "source": "telemetry"
+      },
+      {
+        "id": "4d4a54278750358a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:58:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.905,
+        "source": "telemetry"
+      },
+      {
+        "id": "c101c80fbf1e96fb",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:58:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.507,
+        "source": "telemetry"
+      },
+      {
+        "id": "de4631ab04a2ec82",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:58:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.635,
+        "source": "telemetry"
+      },
+      {
+        "id": "a09f0d83866a6df5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:58:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.38,
+        "source": "telemetry"
+      },
+      {
+        "id": "0666467c680a8b88",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:58:00+00:00",
+        "signal": "throughput_pph",
+        "value": 159.984,
+        "source": "telemetry"
+      },
+      {
+        "id": "7c7c5144411bd9bf",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:58:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.501,
+        "source": "telemetry"
+      },
+      {
+        "id": "f9e9d349529a1477",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:59:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.63,
+        "source": "telemetry"
+      },
+      {
+        "id": "5a7dbe64ab740ec7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:59:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.526,
+        "source": "telemetry"
+      },
+      {
+        "id": "a507103ab194ff14",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:59:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.195,
+        "source": "telemetry"
+      },
+      {
+        "id": "bff6d169abdc4722",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:59:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.65,
+        "source": "telemetry"
+      },
+      {
+        "id": "5ed021ca892fcc65",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:59:00+00:00",
+        "signal": "throughput_pph",
+        "value": 161.384,
+        "source": "telemetry"
+      },
+      {
+        "id": "a1217e50dcf33897",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T00:59:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.599,
+        "source": "telemetry"
+      },
+      {
+        "id": "6e120f590dffcaea",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:00:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.894,
+        "source": "telemetry"
+      },
+      {
+        "id": "777c9a0908fefcb0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:00:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.469,
+        "source": "telemetry"
+      },
+      {
+        "id": "76799dfe36d46f2b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:00:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.058,
+        "source": "telemetry"
+      },
+      {
+        "id": "5667cf71436da533",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:00:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.153,
+        "source": "telemetry"
+      },
+      {
+        "id": "f3c3dc269821f252",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:00:00+00:00",
+        "signal": "throughput_pph",
+        "value": 158.31,
+        "source": "telemetry"
+      },
+      {
+        "id": "aa2efc85f25f6014",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:00:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.717,
+        "source": "telemetry"
+      },
+      {
+        "id": "a5e808dca6de4f54",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:01:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.805,
+        "source": "telemetry"
+      },
+      {
+        "id": "fafb8b3856343863",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:01:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.584,
+        "source": "telemetry"
+      },
+      {
+        "id": "7dede53f35c35eab",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:01:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.889,
+        "source": "telemetry"
+      },
+      {
+        "id": "7782d92680b9249a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:01:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.706,
+        "source": "telemetry"
+      },
+      {
+        "id": "a2dcba9931e49835",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:01:00+00:00",
+        "signal": "throughput_pph",
+        "value": 157.592,
+        "source": "telemetry"
+      },
+      {
+        "id": "2826ac027227fad7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:01:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.784,
+        "source": "telemetry"
+      },
+      {
+        "id": "f64689695a9393e3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:02:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.473,
+        "source": "telemetry"
+      },
+      {
+        "id": "2f47d9f80b0288fb",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:02:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.479,
+        "source": "telemetry"
+      },
+      {
+        "id": "e8acde1f52e638d1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:02:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.332,
+        "source": "telemetry"
+      },
+      {
+        "id": "8223877477f2cb97",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:02:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.314,
+        "source": "telemetry"
+      },
+      {
+        "id": "05e1c7f2be94dab7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:02:00+00:00",
+        "signal": "throughput_pph",
+        "value": 161.573,
+        "source": "telemetry"
+      },
+      {
+        "id": "b99b4b417d2922c5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:02:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.883,
+        "source": "telemetry"
+      },
+      {
+        "id": "ae3f7f56e338dc6c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:03:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.893,
+        "source": "telemetry"
+      },
+      {
+        "id": "d2abe386ce02b65c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:03:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.569,
+        "source": "telemetry"
+      },
+      {
+        "id": "e1d52b092585a8ad",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:03:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 64.363,
+        "source": "telemetry"
+      },
+      {
+        "id": "8e1566886684b9ca",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:03:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.555,
+        "source": "telemetry"
+      },
+      {
+        "id": "1ddb3cfb5f70df4c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:03:00+00:00",
+        "signal": "throughput_pph",
+        "value": 158.255,
+        "source": "telemetry"
+      },
+      {
+        "id": "3b85b589b273a486",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:03:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.98,
+        "source": "telemetry"
+      },
+      {
+        "id": "99c02dc9b1db78f4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:04:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.82,
+        "source": "telemetry"
+      },
+      {
+        "id": "34f2ec0850a80c01",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:04:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.491,
+        "source": "telemetry"
+      },
+      {
+        "id": "e9d8e31dff338e5c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:04:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.437,
+        "source": "telemetry"
+      },
+      {
+        "id": "4386cc0c01f32bab",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:04:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.916,
+        "source": "telemetry"
+      },
+      {
+        "id": "bf734b0898bdfcc9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:04:00+00:00",
+        "signal": "throughput_pph",
+        "value": 155.797,
+        "source": "telemetry"
+      },
+      {
+        "id": "6dca34cf12049a04",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:04:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.131,
+        "source": "telemetry"
+      },
+      {
+        "id": "9d87d0183cbc54d9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:05:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.916,
+        "source": "telemetry"
+      },
+      {
+        "id": "2ac6c129b820a75a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:05:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.583,
+        "source": "telemetry"
+      },
+      {
+        "id": "04938e41b2b80c3f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:05:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.369,
+        "source": "telemetry"
+      },
+      {
+        "id": "7d371a8bcb7ea789",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:05:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.566,
+        "source": "telemetry"
+      },
+      {
+        "id": "316a0896ec7930a9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:05:00+00:00",
+        "signal": "throughput_pph",
+        "value": 157.285,
+        "source": "telemetry"
+      },
+      {
+        "id": "1b802dfd59c08a53",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:05:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.211,
+        "source": "telemetry"
+      },
+      {
+        "id": "53cea3b108adb03c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:06:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.906,
+        "source": "telemetry"
+      },
+      {
+        "id": "3f031139ee96d269",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:06:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.445,
+        "source": "telemetry"
+      },
+      {
+        "id": "f23f88fe595f0163",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:06:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.6,
+        "source": "telemetry"
+      },
+      {
+        "id": "60c409615d7538ba",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:06:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.397,
+        "source": "telemetry"
+      },
+      {
+        "id": "1599354d83790705",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:06:00+00:00",
+        "signal": "throughput_pph",
+        "value": 159.289,
+        "source": "telemetry"
+      },
+      {
+        "id": "fa97e2003840e916",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:06:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.362,
+        "source": "telemetry"
+      },
+      {
+        "id": "5359d882936c1d8b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:07:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.815,
+        "source": "telemetry"
+      },
+      {
+        "id": "ef1322989f36241b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:07:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.55,
+        "source": "telemetry"
+      },
+      {
+        "id": "6d2576c710509989",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:07:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.702,
+        "source": "telemetry"
+      },
+      {
+        "id": "805f1fee0417fed2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:07:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.016,
+        "source": "telemetry"
+      },
+      {
+        "id": "db47765b4afdffbd",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:07:00+00:00",
+        "signal": "throughput_pph",
+        "value": 154.723,
+        "source": "telemetry"
+      },
+      {
+        "id": "895f1d3cd9e7ee9c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:07:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.563,
+        "source": "telemetry"
+      },
+      {
+        "id": "dd615e4fc01923f4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:08:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.595,
+        "source": "telemetry"
+      },
+      {
+        "id": "4509dedde70e7ede",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:08:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.465,
+        "source": "telemetry"
+      },
+      {
+        "id": "b9efb5b1ffc2f704",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:08:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.701,
+        "source": "telemetry"
+      },
+      {
+        "id": "abd3945d899c9dfe",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:08:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.234,
+        "source": "telemetry"
+      },
+      {
+        "id": "4006faace832a9e3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:08:00+00:00",
+        "signal": "throughput_pph",
+        "value": 156.668,
+        "source": "telemetry"
+      },
+      {
+        "id": "ec7120cc172daa8b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:08:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.642,
+        "source": "telemetry"
+      },
+      {
+        "id": "52419993e92fd1e7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:09:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.191,
+        "source": "telemetry"
+      },
+      {
+        "id": "53275aee033e5faa",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:09:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.487,
+        "source": "telemetry"
+      },
+      {
+        "id": "40e19ae2123601e0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:09:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.356,
+        "source": "telemetry"
+      },
+      {
+        "id": "4b7ec9e9232d9415",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:09:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.074,
+        "source": "telemetry"
+      },
+      {
+        "id": "763b14c50f5ab73b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:09:00+00:00",
+        "signal": "throughput_pph",
+        "value": 157.538,
+        "source": "telemetry"
+      },
+      {
+        "id": "e3eadd1e13f78abe",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:09:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.687,
+        "source": "telemetry"
+      },
+      {
+        "id": "8848b95180427516",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:10:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.744,
+        "source": "telemetry"
+      },
+      {
+        "id": "6ff181ff1c9d2391",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:10:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.415,
+        "source": "telemetry"
+      },
+      {
+        "id": "0906218a3b14bc2c",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:10:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.416,
+        "source": "telemetry"
+      },
+      {
+        "id": "064112a23476b94a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:10:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.197,
+        "source": "telemetry"
+      },
+      {
+        "id": "a541779698dff359",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:10:00+00:00",
+        "signal": "throughput_pph",
+        "value": 160.117,
+        "source": "telemetry"
+      },
+      {
+        "id": "e84e3d009442e518",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:10:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.804,
+        "source": "telemetry"
+      },
+      {
+        "id": "b85ad9ba54707d7a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:11:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.317,
+        "source": "telemetry"
+      },
+      {
+        "id": "edf6958018d9d516",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:11:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.474,
+        "source": "telemetry"
+      },
+      {
+        "id": "a8c9148b4057b15f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:11:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.631,
+        "source": "telemetry"
+      },
+      {
+        "id": "3d686cfab2223a19",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:11:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.189,
+        "source": "telemetry"
+      },
+      {
+        "id": "d348943221bf60bb",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:11:00+00:00",
+        "signal": "throughput_pph",
+        "value": 157.455,
+        "source": "telemetry"
+      },
+      {
+        "id": "ae8a62cb60f4911f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:11:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.969,
+        "source": "telemetry"
+      },
+      {
+        "id": "e6dcb316dd79bc8a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:12:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.048,
+        "source": "telemetry"
+      },
+      {
+        "id": "ee0b4dac95338bf5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:12:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.505,
+        "source": "telemetry"
+      },
+      {
+        "id": "746b85266b93fab7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:12:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.793,
+        "source": "telemetry"
+      },
+      {
+        "id": "7896c0022e736771",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:12:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.013,
+        "source": "telemetry"
+      },
+      {
+        "id": "136118c805b106b1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:12:00+00:00",
+        "signal": "throughput_pph",
+        "value": 159.097,
+        "source": "telemetry"
+      },
+      {
+        "id": "89e27d317f0a576b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:12:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.001,
+        "source": "telemetry"
+      },
+      {
+        "id": "4ce2e0f4294f1eef",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:13:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.815,
+        "source": "telemetry"
+      },
+      {
+        "id": "4e707bd856f12cb9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:13:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.481,
+        "source": "telemetry"
+      },
+      {
+        "id": "5d412fb509235cd4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:13:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.005,
+        "source": "telemetry"
+      },
+      {
+        "id": "4fdac80ac9a06866",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:13:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.753,
+        "source": "telemetry"
+      },
+      {
+        "id": "fa477dfa19b0a6de",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:13:00+00:00",
+        "signal": "throughput_pph",
+        "value": 153.053,
+        "source": "telemetry"
+      },
+      {
+        "id": "b4f610a3455aca98",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:13:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.121,
+        "source": "telemetry"
+      },
+      {
+        "id": "2e40902ea0eb3491",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:14:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.792,
+        "source": "telemetry"
+      },
+      {
+        "id": "138b3263a9c52798",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:14:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.507,
+        "source": "telemetry"
+      },
+      {
+        "id": "2b4a2c46997f08f4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:14:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.822,
+        "source": "telemetry"
+      },
+      {
+        "id": "eded5762c08b682f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:14:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.333,
+        "source": "telemetry"
+      },
+      {
+        "id": "dafcf48e7e0f275d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:14:00+00:00",
+        "signal": "throughput_pph",
+        "value": 149.507,
+        "source": "telemetry"
+      },
+      {
+        "id": "7fd2b4ac1916aa32",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:14:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.215,
+        "source": "telemetry"
+      },
+      {
+        "id": "22bab50353a6a14e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:15:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.178,
+        "source": "telemetry"
+      },
+      {
+        "id": "5cbf30d746eace31",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:15:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.548,
+        "source": "telemetry"
+      },
+      {
+        "id": "ff0f76c606f902f7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:15:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.176,
+        "source": "telemetry"
+      },
+      {
+        "id": "135720837a4c2ae4",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:15:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.967,
+        "source": "telemetry"
+      },
+      {
+        "id": "f944ffd7259e867e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:15:00+00:00",
+        "signal": "throughput_pph",
+        "value": 156.107,
+        "source": "telemetry"
+      },
+      {
+        "id": "7bf7c75ae3e62d49",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:15:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.412,
+        "source": "telemetry"
+      },
+      {
+        "id": "d9e2bd0b89c21fd3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:16:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.116,
+        "source": "telemetry"
+      },
+      {
+        "id": "be6744c987ee91dc",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:16:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.525,
+        "source": "telemetry"
+      },
+      {
+        "id": "6656d1d3d665e630",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:16:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.985,
+        "source": "telemetry"
+      },
+      {
+        "id": "49e96ef4eec2af97",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:16:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.691,
+        "source": "telemetry"
+      },
+      {
+        "id": "1026f783673cbf57",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:16:00+00:00",
+        "signal": "throughput_pph",
+        "value": 152.304,
+        "source": "telemetry"
+      },
+      {
+        "id": "1c51d2bc08831f5e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:16:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.457,
+        "source": "telemetry"
+      },
+      {
+        "id": "2e8aac223564af42",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:17:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.566,
+        "source": "telemetry"
+      },
+      {
+        "id": "1314fb7ace5e1743",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:17:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.548,
+        "source": "telemetry"
+      },
+      {
+        "id": "02e3cf488eb70070",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:17:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.558,
+        "source": "telemetry"
+      },
+      {
+        "id": "159e880852810c7e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:17:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.867,
+        "source": "telemetry"
+      },
+      {
+        "id": "29bb0ffd98e22a01",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:17:00+00:00",
+        "signal": "throughput_pph",
+        "value": 153.611,
+        "source": "telemetry"
+      },
+      {
+        "id": "a5ae4bff69fe850a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:17:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.617,
+        "source": "telemetry"
+      },
+      {
+        "id": "edf6bf509a427fe2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:18:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.069,
+        "source": "telemetry"
+      },
+      {
+        "id": "b0bb8673c8edc2ec",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:18:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.455,
+        "source": "telemetry"
+      },
+      {
+        "id": "d398819beb5e49f3",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:18:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.852,
+        "source": "telemetry"
+      },
+      {
+        "id": "ea032d248bd29aef",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:18:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.58,
+        "source": "telemetry"
+      },
+      {
+        "id": "2f2f203d7f167f59",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:18:00+00:00",
+        "signal": "throughput_pph",
+        "value": 155.091,
+        "source": "telemetry"
+      },
+      {
+        "id": "2752bc1a9ac0f71f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:18:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.703,
+        "source": "telemetry"
+      },
+      {
+        "id": "3579f969582bad8f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:19:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.573,
+        "source": "telemetry"
+      },
+      {
+        "id": "fd8838c37b233040",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:19:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.564,
+        "source": "telemetry"
+      },
+      {
+        "id": "0d10fa4129bbf216",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:19:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.19,
+        "source": "telemetry"
+      },
+      {
+        "id": "dd8066da273cf338",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:19:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.729,
+        "source": "telemetry"
+      },
+      {
+        "id": "8e489c4bfd031e41",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:19:00+00:00",
+        "signal": "throughput_pph",
+        "value": 155.324,
+        "source": "telemetry"
+      },
+      {
+        "id": "996571671ea41c18",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:19:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.793,
+        "source": "telemetry"
+      },
+      {
+        "id": "a54fbfd6e7e20324",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:20:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.797,
+        "source": "telemetry"
+      },
+      {
+        "id": "5afb83d126cf0548",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:20:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.508,
+        "source": "telemetry"
+      },
+      {
+        "id": "4a476ed0ca6f528b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:20:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.211,
+        "source": "telemetry"
+      },
+      {
+        "id": "36bfdb60a5dca711",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:20:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.745,
+        "source": "telemetry"
+      },
+      {
+        "id": "54fb5377516fe291",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:20:00+00:00",
+        "signal": "throughput_pph",
+        "value": 150.682,
+        "source": "telemetry"
+      },
+      {
+        "id": "e4e57a3064dc08d6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:20:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.982,
+        "source": "telemetry"
+      },
+      {
+        "id": "522d3cfa0b1222e1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:21:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.498,
+        "source": "telemetry"
+      },
+      {
+        "id": "c679dbd3599aa2c7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:21:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.468,
+        "source": "telemetry"
+      },
+      {
+        "id": "a160f0451120db96",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:21:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.877,
+        "source": "telemetry"
+      },
+      {
+        "id": "3f5b134eeb1b37cd",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:21:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.765,
+        "source": "telemetry"
+      },
+      {
+        "id": "c31fef3a3811a2c0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:21:00+00:00",
+        "signal": "throughput_pph",
+        "value": 151.231,
+        "source": "telemetry"
+      },
+      {
+        "id": "69427f4b5d003a05",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:21:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.013,
+        "source": "telemetry"
+      },
+      {
+        "id": "59f9211b1d66cbe8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:22:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.351,
+        "source": "telemetry"
+      },
+      {
+        "id": "fa17be60c4f55865",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:22:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.521,
+        "source": "telemetry"
+      },
+      {
+        "id": "5351219954dc0009",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:22:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.615,
+        "source": "telemetry"
+      },
+      {
+        "id": "de872a32c4fd468f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:22:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.275,
+        "source": "telemetry"
+      },
+      {
+        "id": "68530ae982fc1f1e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:22:00+00:00",
+        "signal": "throughput_pph",
+        "value": 154.363,
+        "source": "telemetry"
+      },
+      {
+        "id": "68e534e5f0eaafe2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:22:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.154,
+        "source": "telemetry"
+      },
+      {
+        "id": "dcd397faa0543ef5",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:23:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 52.958,
+        "source": "telemetry"
+      },
+      {
+        "id": "8bcea7c9f7a1fd27",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:23:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.405,
+        "source": "telemetry"
+      },
+      {
+        "id": "0172c84f6634220f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:23:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.841,
+        "source": "telemetry"
+      },
+      {
+        "id": "fd7d67a840e40378",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:23:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.036,
+        "source": "telemetry"
+      },
+      {
+        "id": "17141e43b2b4675b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:23:00+00:00",
+        "signal": "throughput_pph",
+        "value": 152.462,
+        "source": "telemetry"
+      },
+      {
+        "id": "daf7e16df8c8bbc2",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:23:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.264,
+        "source": "telemetry"
+      },
+      {
+        "id": "083dddf81f16e143",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:24:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.852,
+        "source": "telemetry"
+      },
+      {
+        "id": "79314124bda055ab",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:24:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.482,
+        "source": "telemetry"
+      },
+      {
+        "id": "fa7dade791f3df89",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:24:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.28,
+        "source": "telemetry"
+      },
+      {
+        "id": "dab706f120d5493a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:24:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.29,
+        "source": "telemetry"
+      },
+      {
+        "id": "e31f090cd66c41ac",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:24:00+00:00",
+        "signal": "throughput_pph",
+        "value": 152.396,
+        "source": "telemetry"
+      },
+      {
+        "id": "7b93a3f91486597f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:24:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.338,
+        "source": "telemetry"
+      },
+      {
+        "id": "ed4834f9d7010c9b",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:25:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.172,
+        "source": "telemetry"
+      },
+      {
+        "id": "61ce515d71b09db1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:25:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.481,
+        "source": "telemetry"
+      },
+      {
+        "id": "c85a4f8c7387d2f1",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:25:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.479,
+        "source": "telemetry"
+      },
+      {
+        "id": "2ebf9a784fd97305",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:25:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.115,
+        "source": "telemetry"
+      },
+      {
+        "id": "4b2c92ab5d6a4364",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:25:00+00:00",
+        "signal": "throughput_pph",
+        "value": 151.733,
+        "source": "telemetry"
+      },
+      {
+        "id": "8c8adbcf44b5485a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:25:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.384,
+        "source": "telemetry"
+      },
+      {
+        "id": "70d03af2e7466925",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:26:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.004,
+        "source": "telemetry"
+      },
+      {
+        "id": "7a13253cebe70c3f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:26:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.543,
+        "source": "telemetry"
+      },
+      {
+        "id": "9bab19c68105e5d9",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:26:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.042,
+        "source": "telemetry"
+      },
+      {
+        "id": "6ff1c9097e126e29",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:26:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.659,
+        "source": "telemetry"
+      },
+      {
+        "id": "7a00ed9d7d3e6f79",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:26:00+00:00",
+        "signal": "throughput_pph",
+        "value": 150.073,
+        "source": "telemetry"
+      },
+      {
+        "id": "9e4af9414f59bc6f",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:26:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.577,
+        "source": "telemetry"
+      },
+      {
+        "id": "2022cf2340b08c18",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:27:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.927,
+        "source": "telemetry"
+      },
+      {
+        "id": "e3b4b2b159edcb31",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:27:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.483,
+        "source": "telemetry"
+      },
+      {
+        "id": "7b0d2777734a66f8",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:27:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.487,
+        "source": "telemetry"
+      },
+      {
+        "id": "6bdcdd03e7195777",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:27:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.52,
+        "source": "telemetry"
+      },
+      {
+        "id": "edab88a4e2813de0",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:27:00+00:00",
+        "signal": "throughput_pph",
+        "value": 147.373,
+        "source": "telemetry"
+      },
+      {
+        "id": "cb99d9660da22aac",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:27:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.695,
+        "source": "telemetry"
+      },
+      {
+        "id": "9de5366a87fc5a42",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:28:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.039,
+        "source": "telemetry"
+      },
+      {
+        "id": "a102572aa18d8c66",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:28:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.457,
+        "source": "telemetry"
+      },
+      {
+        "id": "362a457b22fa2547",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:28:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.475,
+        "source": "telemetry"
+      },
+      {
+        "id": "49f27962323247dd",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:28:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.375,
+        "source": "telemetry"
+      },
+      {
+        "id": "95865df680e38695",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:28:00+00:00",
+        "signal": "throughput_pph",
+        "value": 153.962,
+        "source": "telemetry"
+      },
+      {
+        "id": "e5ee9c4d88d72e10",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:28:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.888,
+        "source": "telemetry"
+      },
+      {
+        "id": "8607d4a4c2ebd43d",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:29:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.227,
+        "source": "telemetry"
+      },
+      {
+        "id": "82f764f488b3cdb7",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:29:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.476,
+        "source": "telemetry"
+      },
+      {
+        "id": "546361fbff665dca",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:29:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.929,
+        "source": "telemetry"
+      },
+      {
+        "id": "f612a1791b5b5f11",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:29:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.966,
+        "source": "telemetry"
+      },
+      {
+        "id": "c4a1e8107112b307",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:29:00+00:00",
+        "signal": "throughput_pph",
+        "value": 150.447,
+        "source": "telemetry"
+      },
+      {
+        "id": "26fc60cb70eff9a6",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:29:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.927,
+        "source": "telemetry"
+      },
+      {
+        "id": "d21104580f725f99",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:30:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.355,
+        "source": "telemetry"
+      },
+      {
+        "id": "6398ee15d1e70452",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:30:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.552,
+        "source": "telemetry"
+      },
+      {
+        "id": "8ca58dec45b69e5e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:30:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.981,
+        "source": "telemetry"
+      },
+      {
+        "id": "2be30a68803d4563",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:30:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.418,
+        "source": "telemetry"
+      },
+      {
+        "id": "c728c53b295da46e",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:30:00+00:00",
+        "signal": "throughput_pph",
+        "value": 147.79,
+        "source": "telemetry"
+      },
+      {
+        "id": "93217608ce23f7fd",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:30:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 11.036,
+        "source": "telemetry"
+      }
+    ],
+    "maintenance": [],
+    "mes": [
+      {
+        "id": "84742ae58272914a",
+        "machine": "PRESS-02",
+        "ts": "2026-07-05T01:20:00+00:00",
+        "event": "error_code",
+        "detail": "Quality alarm: defect rate high",
+        "code": "E-QAL-07",
+        "source": "mes"
+      }
+    ],
+    "past_incidents": [
+      {
+        "incident_id": "PAST-ecf1822b657bf629",
+        "asset": "PRESS-02",
+        "root_cause_category": "tool_wear",
+        "window_start": "2026-06-26T00:00:00+00:00",
+        "window_end": "2026-06-26T00:00:00+00:00",
+        "summary": "Earlier tool_wear event on PRESS-02."
+      }
+    ],
+    "reliability": {
+      "telemetry": 1.0,
+      "maintenance": 0.5,
+      "mes": 1.0
+    }
+  }
+}

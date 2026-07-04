@@ -1,0 +1,4423 @@
+{
+  "labels": {
+    "key": "tool_wear-CNC-17-1",
+    "expected_category": "tool_wear",
+    "expected_root_cause_kw": [
+      "tool",
+      "wear",
+      "defect",
+      "quality"
+    ],
+    "key_signals": [
+      "defect_rate_pct"
+    ],
+    "expects_missing_evidence": false,
+    "asset": "CNC-17",
+    "window_start": "2026-07-08T03:00:00+00:00",
+    "window_end": "2026-07-08T04:30:00+00:00",
+    "title": "Gradual tool wear -> rising defect rate",
+    "notes": ""
+  },
+  "bundle": {
+    "asset": "CNC-17",
+    "window_start": "2026-07-08T03:00:00+00:00",
+    "window_end": "2026-07-08T04:30:00+00:00",
+    "readings": [
+      {
+        "id": "749101ff7d0f7fd8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:00:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.026,
+        "source": "telemetry"
+      },
+      {
+        "id": "c22fa9ceab02c6b4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:00:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.585,
+        "source": "telemetry"
+      },
+      {
+        "id": "85aea8aaa29465a3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:00:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.783,
+        "source": "telemetry"
+      },
+      {
+        "id": "9791698062358d37",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:00:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.251,
+        "source": "telemetry"
+      },
+      {
+        "id": "7ed77065da114c41",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:00:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.21,
+        "source": "telemetry"
+      },
+      {
+        "id": "bd692633366ca6f0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:00:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.22,
+        "source": "telemetry"
+      },
+      {
+        "id": "b9ba8c97b32c9984",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:01:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.521,
+        "source": "telemetry"
+      },
+      {
+        "id": "4caff08714a6e232",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:01:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.511,
+        "source": "telemetry"
+      },
+      {
+        "id": "1e21e9ee25ec8e1c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:01:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.954,
+        "source": "telemetry"
+      },
+      {
+        "id": "398d5319d018ec12",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:01:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.609,
+        "source": "telemetry"
+      },
+      {
+        "id": "dedd97906f705da0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:01:00+00:00",
+        "signal": "throughput_pph",
+        "value": 180.248,
+        "source": "telemetry"
+      },
+      {
+        "id": "f721c8f3f156285f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:01:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.335,
+        "source": "telemetry"
+      },
+      {
+        "id": "91ca4058649b6b5c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:02:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.858,
+        "source": "telemetry"
+      },
+      {
+        "id": "686c40d5a77ee9d1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:02:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.377,
+        "source": "telemetry"
+      },
+      {
+        "id": "1f14b9ad6097c5b2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:02:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.381,
+        "source": "telemetry"
+      },
+      {
+        "id": "43640a03676036d0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:02:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.941,
+        "source": "telemetry"
+      },
+      {
+        "id": "8492c2b22e6c8dc7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:02:00+00:00",
+        "signal": "throughput_pph",
+        "value": 185.695,
+        "source": "telemetry"
+      },
+      {
+        "id": "edb5c910d049ab13",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:02:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.52,
+        "source": "telemetry"
+      },
+      {
+        "id": "301c1ceed3c4e409",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:03:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.828,
+        "source": "telemetry"
+      },
+      {
+        "id": "b4727b8fee24b8a7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:03:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.525,
+        "source": "telemetry"
+      },
+      {
+        "id": "3cc808db86e62c8d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:03:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.992,
+        "source": "telemetry"
+      },
+      {
+        "id": "f9b6e60c8bce1bfd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:03:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.006,
+        "source": "telemetry"
+      },
+      {
+        "id": "4949e6282f4ad6af",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:03:00+00:00",
+        "signal": "throughput_pph",
+        "value": 183.515,
+        "source": "telemetry"
+      },
+      {
+        "id": "55be57eef78f12de",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:03:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.569,
+        "source": "telemetry"
+      },
+      {
+        "id": "228339ef7bf070c7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:04:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.25,
+        "source": "telemetry"
+      },
+      {
+        "id": "af9a522c381ccabe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:04:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.424,
+        "source": "telemetry"
+      },
+      {
+        "id": "9e5a561d2f167e90",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:04:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 64.017,
+        "source": "telemetry"
+      },
+      {
+        "id": "2d3fb518fc41f7cb",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:04:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.568,
+        "source": "telemetry"
+      },
+      {
+        "id": "b06fbed11a57f589",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:04:00+00:00",
+        "signal": "throughput_pph",
+        "value": 181.867,
+        "source": "telemetry"
+      },
+      {
+        "id": "6fe82dd70a255fb5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:04:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.76,
+        "source": "telemetry"
+      },
+      {
+        "id": "71fc81a56d8dfdbf",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:05:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.099,
+        "source": "telemetry"
+      },
+      {
+        "id": "07d6f00364e5934d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:05:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.418,
+        "source": "telemetry"
+      },
+      {
+        "id": "0eb516bdfd3b7202",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:05:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.846,
+        "source": "telemetry"
+      },
+      {
+        "id": "625d03d633bca895",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:05:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.591,
+        "source": "telemetry"
+      },
+      {
+        "id": "a30cdee668506568",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:05:00+00:00",
+        "signal": "throughput_pph",
+        "value": 180.136,
+        "source": "telemetry"
+      },
+      {
+        "id": "2df365983b9ae8f1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:05:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.701,
+        "source": "telemetry"
+      },
+      {
+        "id": "c9895396f5fd61bc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:06:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.413,
+        "source": "telemetry"
+      },
+      {
+        "id": "8c41c96563e61ec9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:06:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.576,
+        "source": "telemetry"
+      },
+      {
+        "id": "925d8c4c4d46c48e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:06:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.039,
+        "source": "telemetry"
+      },
+      {
+        "id": "16a52ee258a3aefe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:06:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.883,
+        "source": "telemetry"
+      },
+      {
+        "id": "e8a53e5aed58f709",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:06:00+00:00",
+        "signal": "throughput_pph",
+        "value": 177.258,
+        "source": "telemetry"
+      },
+      {
+        "id": "bde05ea9ae26ba97",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:06:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.857,
+        "source": "telemetry"
+      },
+      {
+        "id": "e089668965de53bf",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:07:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.232,
+        "source": "telemetry"
+      },
+      {
+        "id": "5d18a80702976f85",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:07:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.516,
+        "source": "telemetry"
+      },
+      {
+        "id": "e07e74a2935a74f6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:07:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.9,
+        "source": "telemetry"
+      },
+      {
+        "id": "69512a5b5d8874de",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:07:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.885,
+        "source": "telemetry"
+      },
+      {
+        "id": "2180865383689b97",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:07:00+00:00",
+        "signal": "throughput_pph",
+        "value": 176.148,
+        "source": "telemetry"
+      },
+      {
+        "id": "2bd8d8135b945f5e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:07:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 1.927,
+        "source": "telemetry"
+      },
+      {
+        "id": "695340e410f1db45",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:08:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.961,
+        "source": "telemetry"
+      },
+      {
+        "id": "03299f0945f39ce3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:08:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.475,
+        "source": "telemetry"
+      },
+      {
+        "id": "4e2317bcd42d77ec",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:08:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.968,
+        "source": "telemetry"
+      },
+      {
+        "id": "69c038c8f23d50ba",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:08:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.117,
+        "source": "telemetry"
+      },
+      {
+        "id": "8373a591013b0ea5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:08:00+00:00",
+        "signal": "throughput_pph",
+        "value": 175.221,
+        "source": "telemetry"
+      },
+      {
+        "id": "91a70a6a25e3b3ac",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:08:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.144,
+        "source": "telemetry"
+      },
+      {
+        "id": "0cca1f59b27eff63",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:09:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.634,
+        "source": "telemetry"
+      },
+      {
+        "id": "ee26b4988d1c6a8f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:09:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.57,
+        "source": "telemetry"
+      },
+      {
+        "id": "1732021d9547306f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:09:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.274,
+        "source": "telemetry"
+      },
+      {
+        "id": "c0d818699b9977d2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:09:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.405,
+        "source": "telemetry"
+      },
+      {
+        "id": "3c1cf2428865a15b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:09:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.565,
+        "source": "telemetry"
+      },
+      {
+        "id": "dce49c2f65938a8e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:09:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.107,
+        "source": "telemetry"
+      },
+      {
+        "id": "30306d1269856fa3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:10:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.904,
+        "source": "telemetry"
+      },
+      {
+        "id": "96bad044c82eebb0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:10:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.532,
+        "source": "telemetry"
+      },
+      {
+        "id": "f4ede6764d9c7719",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:10:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.371,
+        "source": "telemetry"
+      },
+      {
+        "id": "c3eb4338fb69a045",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:10:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.315,
+        "source": "telemetry"
+      },
+      {
+        "id": "374db10dc7a24a2b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:10:00+00:00",
+        "signal": "throughput_pph",
+        "value": 179.384,
+        "source": "telemetry"
+      },
+      {
+        "id": "9e3b342dadce43ba",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:10:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.369,
+        "source": "telemetry"
+      },
+      {
+        "id": "738263794b4108be",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:11:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.359,
+        "source": "telemetry"
+      },
+      {
+        "id": "147ec9f75a7f11ed",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:11:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.398,
+        "source": "telemetry"
+      },
+      {
+        "id": "54e4d8b77afc27df",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:11:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.998,
+        "source": "telemetry"
+      },
+      {
+        "id": "ae02475632bf4536",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:11:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.001,
+        "source": "telemetry"
+      },
+      {
+        "id": "38056711c9420b0e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:11:00+00:00",
+        "signal": "throughput_pph",
+        "value": 177.035,
+        "source": "telemetry"
+      },
+      {
+        "id": "6931e4eeef80d3a3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:11:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.431,
+        "source": "telemetry"
+      },
+      {
+        "id": "5eea0ac1cef496f7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:12:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.322,
+        "source": "telemetry"
+      },
+      {
+        "id": "6f86e6863c614431",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:12:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.431,
+        "source": "telemetry"
+      },
+      {
+        "id": "05dcf8cdfc623da8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:12:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.442,
+        "source": "telemetry"
+      },
+      {
+        "id": "09eaed5ef7266627",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:12:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.182,
+        "source": "telemetry"
+      },
+      {
+        "id": "1075c002f8159e61",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:12:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.804,
+        "source": "telemetry"
+      },
+      {
+        "id": "de356158f4f04f14",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:12:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.504,
+        "source": "telemetry"
+      },
+      {
+        "id": "b01c2dd665d0b3ee",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:13:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.213,
+        "source": "telemetry"
+      },
+      {
+        "id": "df7e6fc8e508d9cc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:13:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.494,
+        "source": "telemetry"
+      },
+      {
+        "id": "c740ee70924030e1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:13:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.556,
+        "source": "telemetry"
+      },
+      {
+        "id": "bf21c25afe46ed14",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:13:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.322,
+        "source": "telemetry"
+      },
+      {
+        "id": "81fdefc685042593",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:13:00+00:00",
+        "signal": "throughput_pph",
+        "value": 177.357,
+        "source": "telemetry"
+      },
+      {
+        "id": "9d5d11b5a8906360",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:13:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.592,
+        "source": "telemetry"
+      },
+      {
+        "id": "e705b124ed7de6d1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:14:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.031,
+        "source": "telemetry"
+      },
+      {
+        "id": "6f0972ba31fd1d88",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:14:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.492,
+        "source": "telemetry"
+      },
+      {
+        "id": "d141379adad352b8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:14:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.349,
+        "source": "telemetry"
+      },
+      {
+        "id": "26694874c9d4f3cd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:14:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.739,
+        "source": "telemetry"
+      },
+      {
+        "id": "da9a936d1fad0f15",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:14:00+00:00",
+        "signal": "throughput_pph",
+        "value": 178.496,
+        "source": "telemetry"
+      },
+      {
+        "id": "d56a832a51408d1d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:14:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.785,
+        "source": "telemetry"
+      },
+      {
+        "id": "b23ace02066046c5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:15:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.729,
+        "source": "telemetry"
+      },
+      {
+        "id": "b189a52f2d2807d6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:15:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.442,
+        "source": "telemetry"
+      },
+      {
+        "id": "f147f7930d7ec8f7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:15:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.134,
+        "source": "telemetry"
+      },
+      {
+        "id": "605ea3e52cef2838",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:15:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.154,
+        "source": "telemetry"
+      },
+      {
+        "id": "a340894eefc516c2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:15:00+00:00",
+        "signal": "throughput_pph",
+        "value": 175.966,
+        "source": "telemetry"
+      },
+      {
+        "id": "cc7d3201954f1fe7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:15:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.773,
+        "source": "telemetry"
+      },
+      {
+        "id": "23c180005f1f5d8c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:16:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.593,
+        "source": "telemetry"
+      },
+      {
+        "id": "dbdfb279f78c9c7e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:16:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.361,
+        "source": "telemetry"
+      },
+      {
+        "id": "6f596acbf1ba4346",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:16:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.864,
+        "source": "telemetry"
+      },
+      {
+        "id": "1f18559ce3cdb815",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:16:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.657,
+        "source": "telemetry"
+      },
+      {
+        "id": "c7babf00243e70f5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:16:00+00:00",
+        "signal": "throughput_pph",
+        "value": 172.551,
+        "source": "telemetry"
+      },
+      {
+        "id": "851d4758955044dc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:16:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 2.864,
+        "source": "telemetry"
+      },
+      {
+        "id": "9bae0c6b5480647f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:17:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.71,
+        "source": "telemetry"
+      },
+      {
+        "id": "e434d37073dded1a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:17:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.503,
+        "source": "telemetry"
+      },
+      {
+        "id": "5ae779420e598aef",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:17:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.602,
+        "source": "telemetry"
+      },
+      {
+        "id": "4fac1bdebd6459b6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:17:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.942,
+        "source": "telemetry"
+      },
+      {
+        "id": "3faacef80048ef40",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:17:00+00:00",
+        "signal": "throughput_pph",
+        "value": 176.95,
+        "source": "telemetry"
+      },
+      {
+        "id": "60ec4bdd8b023e3d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:17:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.087,
+        "source": "telemetry"
+      },
+      {
+        "id": "af3fc90e22dfea13",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:18:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.58,
+        "source": "telemetry"
+      },
+      {
+        "id": "d398862b5d54f050",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:18:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.48,
+        "source": "telemetry"
+      },
+      {
+        "id": "f5bb8fd48689cb8e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:18:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.83,
+        "source": "telemetry"
+      },
+      {
+        "id": "0d1fff3b52efedd1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:18:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.837,
+        "source": "telemetry"
+      },
+      {
+        "id": "c3672423269a885d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:18:00+00:00",
+        "signal": "throughput_pph",
+        "value": 177.294,
+        "source": "telemetry"
+      },
+      {
+        "id": "42d75b3b881cd7de",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:18:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.214,
+        "source": "telemetry"
+      },
+      {
+        "id": "a0f49f1cb6abd5e0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:19:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.507,
+        "source": "telemetry"
+      },
+      {
+        "id": "f1064c0bd8e0a3b7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:19:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.469,
+        "source": "telemetry"
+      },
+      {
+        "id": "8e03e4eb981cb4a5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:19:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.054,
+        "source": "telemetry"
+      },
+      {
+        "id": "6873e91d2c438d2c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:19:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.552,
+        "source": "telemetry"
+      },
+      {
+        "id": "d0de16b6390a97f1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:19:00+00:00",
+        "signal": "throughput_pph",
+        "value": 171.971,
+        "source": "telemetry"
+      },
+      {
+        "id": "5f7a813499aa976f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:19:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.325,
+        "source": "telemetry"
+      },
+      {
+        "id": "182514f12d6e44a5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:20:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.875,
+        "source": "telemetry"
+      },
+      {
+        "id": "a26ade46e0c99ea0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:20:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.497,
+        "source": "telemetry"
+      },
+      {
+        "id": "02603820dcfe8bfe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:20:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.583,
+        "source": "telemetry"
+      },
+      {
+        "id": "37a51ae447777ac3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:20:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.671,
+        "source": "telemetry"
+      },
+      {
+        "id": "8f520e1e641c9186",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:20:00+00:00",
+        "signal": "throughput_pph",
+        "value": 172.872,
+        "source": "telemetry"
+      },
+      {
+        "id": "e3171a5804be350f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:20:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.409,
+        "source": "telemetry"
+      },
+      {
+        "id": "949c6096e57d31b0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:21:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.071,
+        "source": "telemetry"
+      },
+      {
+        "id": "86cf02d7716f13bf",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:21:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.472,
+        "source": "telemetry"
+      },
+      {
+        "id": "5a9d9fcf07e63bad",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:21:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.791,
+        "source": "telemetry"
+      },
+      {
+        "id": "83f24ebe343b4e16",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:21:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.612,
+        "source": "telemetry"
+      },
+      {
+        "id": "1d568c923246b047",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:21:00+00:00",
+        "signal": "throughput_pph",
+        "value": 180.126,
+        "source": "telemetry"
+      },
+      {
+        "id": "7de7ce6a65bfa500",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:21:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.515,
+        "source": "telemetry"
+      },
+      {
+        "id": "752c9cf476dfa636",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:22:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.945,
+        "source": "telemetry"
+      },
+      {
+        "id": "360de1ba14289c42",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:22:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.5,
+        "source": "telemetry"
+      },
+      {
+        "id": "2aad799ae125a209",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:22:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.61,
+        "source": "telemetry"
+      },
+      {
+        "id": "b18a8309374273a6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:22:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.541,
+        "source": "telemetry"
+      },
+      {
+        "id": "d58dccd7da7d9594",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:22:00+00:00",
+        "signal": "throughput_pph",
+        "value": 172.166,
+        "source": "telemetry"
+      },
+      {
+        "id": "505b1c7fd743e7d4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:22:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.553,
+        "source": "telemetry"
+      },
+      {
+        "id": "37671c886bdf7d04",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:23:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.917,
+        "source": "telemetry"
+      },
+      {
+        "id": "de6c9d471baed444",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:23:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.472,
+        "source": "telemetry"
+      },
+      {
+        "id": "2b8c040a830e5d52",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:23:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.103,
+        "source": "telemetry"
+      },
+      {
+        "id": "9ca92a6aac09222a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:23:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.146,
+        "source": "telemetry"
+      },
+      {
+        "id": "d011f96892313697",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:23:00+00:00",
+        "signal": "throughput_pph",
+        "value": 173.177,
+        "source": "telemetry"
+      },
+      {
+        "id": "038412869082f410",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:23:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.761,
+        "source": "telemetry"
+      },
+      {
+        "id": "687c9b61dbcb7807",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:24:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.952,
+        "source": "telemetry"
+      },
+      {
+        "id": "be86852a0b6387fd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:24:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.428,
+        "source": "telemetry"
+      },
+      {
+        "id": "e0cdf6fbd2c57945",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:24:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.375,
+        "source": "telemetry"
+      },
+      {
+        "id": "a369d420b756c7d2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:24:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.042,
+        "source": "telemetry"
+      },
+      {
+        "id": "69f1b95185634a47",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:24:00+00:00",
+        "signal": "throughput_pph",
+        "value": 174.132,
+        "source": "telemetry"
+      },
+      {
+        "id": "9d2aedf954ad4773",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:24:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.838,
+        "source": "telemetry"
+      },
+      {
+        "id": "e681645cb7ac6129",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:25:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.344,
+        "source": "telemetry"
+      },
+      {
+        "id": "6e715fa27f645725",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:25:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.51,
+        "source": "telemetry"
+      },
+      {
+        "id": "229e9fadef48a41c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:25:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.68,
+        "source": "telemetry"
+      },
+      {
+        "id": "5c08acfe7709de1f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:25:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.269,
+        "source": "telemetry"
+      },
+      {
+        "id": "af00ff2cba47a481",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:25:00+00:00",
+        "signal": "throughput_pph",
+        "value": 173.451,
+        "source": "telemetry"
+      },
+      {
+        "id": "b546eb3c216063e6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:25:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 3.909,
+        "source": "telemetry"
+      },
+      {
+        "id": "622297b8a09e1dd7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:26:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.245,
+        "source": "telemetry"
+      },
+      {
+        "id": "3fb74aed123ffff5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:26:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.529,
+        "source": "telemetry"
+      },
+      {
+        "id": "d6d9faef3a7d149a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:26:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.748,
+        "source": "telemetry"
+      },
+      {
+        "id": "a78996e437b91522",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:26:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.79,
+        "source": "telemetry"
+      },
+      {
+        "id": "573ab293d6593a42",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:26:00+00:00",
+        "signal": "throughput_pph",
+        "value": 169.898,
+        "source": "telemetry"
+      },
+      {
+        "id": "f52500e31dae16e5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:26:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.08,
+        "source": "telemetry"
+      },
+      {
+        "id": "b52ab2ca8a6d0829",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:27:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.807,
+        "source": "telemetry"
+      },
+      {
+        "id": "6fc2296ab6ae2430",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:27:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.605,
+        "source": "telemetry"
+      },
+      {
+        "id": "adc8f44a398e87d8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:27:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.865,
+        "source": "telemetry"
+      },
+      {
+        "id": "ad440098d2f3a40d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:27:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.29,
+        "source": "telemetry"
+      },
+      {
+        "id": "d8778fabdffb2de3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:27:00+00:00",
+        "signal": "throughput_pph",
+        "value": 172.964,
+        "source": "telemetry"
+      },
+      {
+        "id": "4624c719fcd2f6c7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:27:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.125,
+        "source": "telemetry"
+      },
+      {
+        "id": "59051b8c77c6ae64",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:28:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.317,
+        "source": "telemetry"
+      },
+      {
+        "id": "e5efd35428cbffbe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:28:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.489,
+        "source": "telemetry"
+      },
+      {
+        "id": "63f4927af3ea5fb8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:28:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.521,
+        "source": "telemetry"
+      },
+      {
+        "id": "8a2a86e5960ff15c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:28:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.81,
+        "source": "telemetry"
+      },
+      {
+        "id": "944c350bdf002462",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:28:00+00:00",
+        "signal": "throughput_pph",
+        "value": 167.949,
+        "source": "telemetry"
+      },
+      {
+        "id": "f8db778426902e4b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:28:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.225,
+        "source": "telemetry"
+      },
+      {
+        "id": "22ddd6fa51eb68fe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:29:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.332,
+        "source": "telemetry"
+      },
+      {
+        "id": "999e887460b6bde8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:29:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.414,
+        "source": "telemetry"
+      },
+      {
+        "id": "fc11d7ef4b7131f0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:29:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.926,
+        "source": "telemetry"
+      },
+      {
+        "id": "30f38dee5dc4532d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:29:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.256,
+        "source": "telemetry"
+      },
+      {
+        "id": "ae83c1260cfd4ce1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:29:00+00:00",
+        "signal": "throughput_pph",
+        "value": 166.44,
+        "source": "telemetry"
+      },
+      {
+        "id": "39740bd82d367667",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:29:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.469,
+        "source": "telemetry"
+      },
+      {
+        "id": "fbc01821453ab4d8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:30:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.157,
+        "source": "telemetry"
+      },
+      {
+        "id": "a2a788c48b8f88cc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:30:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.495,
+        "source": "telemetry"
+      },
+      {
+        "id": "98822910dc7e7014",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:30:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.279,
+        "source": "telemetry"
+      },
+      {
+        "id": "a1d7b01640a71678",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:30:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.756,
+        "source": "telemetry"
+      },
+      {
+        "id": "9c826d0ce834e1dc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:30:00+00:00",
+        "signal": "throughput_pph",
+        "value": 165.744,
+        "source": "telemetry"
+      },
+      {
+        "id": "b85b8fa1614e11a6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:30:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.427,
+        "source": "telemetry"
+      },
+      {
+        "id": "5066c231f63f621b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:31:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.965,
+        "source": "telemetry"
+      },
+      {
+        "id": "3d164fe0889225a8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:31:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.576,
+        "source": "telemetry"
+      },
+      {
+        "id": "d26b9fd45cb32cad",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:31:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.967,
+        "source": "telemetry"
+      },
+      {
+        "id": "f74da20e4d206e9b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:31:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.069,
+        "source": "telemetry"
+      },
+      {
+        "id": "5a5de70bc5e9b6b7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:31:00+00:00",
+        "signal": "throughput_pph",
+        "value": 169.966,
+        "source": "telemetry"
+      },
+      {
+        "id": "f42170cec7ffc431",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:31:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.516,
+        "source": "telemetry"
+      },
+      {
+        "id": "4b5d7d7e7d04920b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:32:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.961,
+        "source": "telemetry"
+      },
+      {
+        "id": "7268481606ff4855",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:32:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.572,
+        "source": "telemetry"
+      },
+      {
+        "id": "b445e27ae73863f4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:32:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.854,
+        "source": "telemetry"
+      },
+      {
+        "id": "8496a1f42de286bc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:32:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.617,
+        "source": "telemetry"
+      },
+      {
+        "id": "96a6ea3f9c488b6c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:32:00+00:00",
+        "signal": "throughput_pph",
+        "value": 167.757,
+        "source": "telemetry"
+      },
+      {
+        "id": "0fafbd351b18b7ac",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:32:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.674,
+        "source": "telemetry"
+      },
+      {
+        "id": "c1bbcadd9c83b795",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:33:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.085,
+        "source": "telemetry"
+      },
+      {
+        "id": "ec8bc3a171ab3fd7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:33:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.395,
+        "source": "telemetry"
+      },
+      {
+        "id": "38b6ea2973ce3f9c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:33:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.546,
+        "source": "telemetry"
+      },
+      {
+        "id": "9b20d9e235ceba7b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:33:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.968,
+        "source": "telemetry"
+      },
+      {
+        "id": "d7cc27f9520a2be7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:33:00+00:00",
+        "signal": "throughput_pph",
+        "value": 168.986,
+        "source": "telemetry"
+      },
+      {
+        "id": "f19c489f94466e64",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:33:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.838,
+        "source": "telemetry"
+      },
+      {
+        "id": "f7e74c25d333b72a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:34:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.602,
+        "source": "telemetry"
+      },
+      {
+        "id": "a7e00128ef619324",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:34:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.534,
+        "source": "telemetry"
+      },
+      {
+        "id": "c51ed2f804cd1c0d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:34:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.331,
+        "source": "telemetry"
+      },
+      {
+        "id": "d71f625f3bf28b5e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:34:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.301,
+        "source": "telemetry"
+      },
+      {
+        "id": "553c813204e39ffc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:34:00+00:00",
+        "signal": "throughput_pph",
+        "value": 168.816,
+        "source": "telemetry"
+      },
+      {
+        "id": "9fb45b2057841130",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:34:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 4.956,
+        "source": "telemetry"
+      },
+      {
+        "id": "7f62321070794270",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:35:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.606,
+        "source": "telemetry"
+      },
+      {
+        "id": "d6bbfd9d29877b42",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:35:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.538,
+        "source": "telemetry"
+      },
+      {
+        "id": "4272445e03bbbe29",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:35:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.485,
+        "source": "telemetry"
+      },
+      {
+        "id": "c8bd724a2688443c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:35:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.99,
+        "source": "telemetry"
+      },
+      {
+        "id": "74ee8b689c262ea1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:35:00+00:00",
+        "signal": "throughput_pph",
+        "value": 166.508,
+        "source": "telemetry"
+      },
+      {
+        "id": "6386b26f33325a2a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:35:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.04,
+        "source": "telemetry"
+      },
+      {
+        "id": "9d93a71fc8b60ea0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:36:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.987,
+        "source": "telemetry"
+      },
+      {
+        "id": "f7ee08f41c1d3099",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:36:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.501,
+        "source": "telemetry"
+      },
+      {
+        "id": "0232e4c723303fc6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:36:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.562,
+        "source": "telemetry"
+      },
+      {
+        "id": "6e55039c39345d56",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:36:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.673,
+        "source": "telemetry"
+      },
+      {
+        "id": "5663761acbbad74a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:36:00+00:00",
+        "signal": "throughput_pph",
+        "value": 170.732,
+        "source": "telemetry"
+      },
+      {
+        "id": "3ca84a27f7c1ae7f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:36:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.093,
+        "source": "telemetry"
+      },
+      {
+        "id": "b82e391bdd7a6018",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:37:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.288,
+        "source": "telemetry"
+      },
+      {
+        "id": "cdefb697c66fe372",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:37:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.505,
+        "source": "telemetry"
+      },
+      {
+        "id": "02a501044ffb6465",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:37:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.637,
+        "source": "telemetry"
+      },
+      {
+        "id": "63a68057a6b1b781",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:37:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.831,
+        "source": "telemetry"
+      },
+      {
+        "id": "c7f158cbbd5f8286",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:37:00+00:00",
+        "signal": "throughput_pph",
+        "value": 169.117,
+        "source": "telemetry"
+      },
+      {
+        "id": "5cd92475ded39d45",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:37:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.197,
+        "source": "telemetry"
+      },
+      {
+        "id": "336a0c5909443838",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:38:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.177,
+        "source": "telemetry"
+      },
+      {
+        "id": "deaf6480599cc7e0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:38:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.468,
+        "source": "telemetry"
+      },
+      {
+        "id": "13ba905b1e1fb918",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:38:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 59.851,
+        "source": "telemetry"
+      },
+      {
+        "id": "f17e2dc59b7f0e44",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:38:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.661,
+        "source": "telemetry"
+      },
+      {
+        "id": "6c50d0aa2055ffaa",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:38:00+00:00",
+        "signal": "throughput_pph",
+        "value": 174.352,
+        "source": "telemetry"
+      },
+      {
+        "id": "5c40c82a74b66803",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:38:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.429,
+        "source": "telemetry"
+      },
+      {
+        "id": "b12737b4e0e62229",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:39:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.802,
+        "source": "telemetry"
+      },
+      {
+        "id": "6620d33aaa459176",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:39:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.467,
+        "source": "telemetry"
+      },
+      {
+        "id": "99353af9570373d9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:39:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.493,
+        "source": "telemetry"
+      },
+      {
+        "id": "44b7a61b63ba6fae",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:39:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.9,
+        "source": "telemetry"
+      },
+      {
+        "id": "146ef782b5ecec2b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:39:00+00:00",
+        "signal": "throughput_pph",
+        "value": 168.222,
+        "source": "telemetry"
+      },
+      {
+        "id": "9c732812dddc270e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:39:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.397,
+        "source": "telemetry"
+      },
+      {
+        "id": "7f143280cdb28c24",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:40:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.75,
+        "source": "telemetry"
+      },
+      {
+        "id": "66f416fa69f4c09c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:40:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.599,
+        "source": "telemetry"
+      },
+      {
+        "id": "48b9e0c5fc0b4464",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:40:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.206,
+        "source": "telemetry"
+      },
+      {
+        "id": "e1f280e1c1222098",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:40:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.903,
+        "source": "telemetry"
+      },
+      {
+        "id": "2a3c605e8433800c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:40:00+00:00",
+        "signal": "throughput_pph",
+        "value": 166.765,
+        "source": "telemetry"
+      },
+      {
+        "id": "359d735a3f3cbb9c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:40:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.51,
+        "source": "telemetry"
+      },
+      {
+        "id": "1f95fd61be01bf44",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:41:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.097,
+        "source": "telemetry"
+      },
+      {
+        "id": "eeb3c852838a63fc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:41:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.58,
+        "source": "telemetry"
+      },
+      {
+        "id": "bde0f46dafdfcdbe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:41:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.832,
+        "source": "telemetry"
+      },
+      {
+        "id": "ce54327db97605ab",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:41:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.856,
+        "source": "telemetry"
+      },
+      {
+        "id": "2c6d17d7a2992b46",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:41:00+00:00",
+        "signal": "throughput_pph",
+        "value": 166.391,
+        "source": "telemetry"
+      },
+      {
+        "id": "c3c257cb3bae3b8e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:41:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.614,
+        "source": "telemetry"
+      },
+      {
+        "id": "728b062c31e6d21b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:42:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.643,
+        "source": "telemetry"
+      },
+      {
+        "id": "ed7d3c3c3b11c5e5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:42:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.516,
+        "source": "telemetry"
+      },
+      {
+        "id": "4d91634062a283bd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:42:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.236,
+        "source": "telemetry"
+      },
+      {
+        "id": "7c2937d8587eef39",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:42:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.485,
+        "source": "telemetry"
+      },
+      {
+        "id": "69223b27f72e7f18",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:42:00+00:00",
+        "signal": "throughput_pph",
+        "value": 168.407,
+        "source": "telemetry"
+      },
+      {
+        "id": "59b395de2c2702d7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:42:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.76,
+        "source": "telemetry"
+      },
+      {
+        "id": "3e1413757cd45f18",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:43:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.341,
+        "source": "telemetry"
+      },
+      {
+        "id": "ffe7770d6738e6d6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:43:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.469,
+        "source": "telemetry"
+      },
+      {
+        "id": "1ad9878aff71b1c9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:43:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.453,
+        "source": "telemetry"
+      },
+      {
+        "id": "fd7d701d988f9960",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:43:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.797,
+        "source": "telemetry"
+      },
+      {
+        "id": "f30fc10523417659",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:43:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.602,
+        "source": "telemetry"
+      },
+      {
+        "id": "877b49f80a434fa6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:43:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 5.866,
+        "source": "telemetry"
+      },
+      {
+        "id": "ba5055c156ed4608",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:44:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.334,
+        "source": "telemetry"
+      },
+      {
+        "id": "82d7c8e52d8b8135",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:44:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.404,
+        "source": "telemetry"
+      },
+      {
+        "id": "d831c5855949770b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:44:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.647,
+        "source": "telemetry"
+      },
+      {
+        "id": "77072e55be6b647a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:44:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.044,
+        "source": "telemetry"
+      },
+      {
+        "id": "7240ee86a994abbf",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:44:00+00:00",
+        "signal": "throughput_pph",
+        "value": 159.913,
+        "source": "telemetry"
+      },
+      {
+        "id": "276372c936537419",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:44:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.017,
+        "source": "telemetry"
+      },
+      {
+        "id": "18caa9d78b5cb217",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:45:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.021,
+        "source": "telemetry"
+      },
+      {
+        "id": "3cd6ac2eba3a2e76",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:45:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.499,
+        "source": "telemetry"
+      },
+      {
+        "id": "0ee12fbf262357bc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:45:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.095,
+        "source": "telemetry"
+      },
+      {
+        "id": "1819909a731cfd44",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:45:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.712,
+        "source": "telemetry"
+      },
+      {
+        "id": "dc0c1291e9ba3da8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:45:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.232,
+        "source": "telemetry"
+      },
+      {
+        "id": "c41a6d8b556c0f42",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:45:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.02,
+        "source": "telemetry"
+      },
+      {
+        "id": "2a34aafec7bcded5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:46:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.363,
+        "source": "telemetry"
+      },
+      {
+        "id": "104b6dd8a1daac38",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:46:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.493,
+        "source": "telemetry"
+      },
+      {
+        "id": "dd9ebb3dd437c97e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:46:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.874,
+        "source": "telemetry"
+      },
+      {
+        "id": "2ab086f52b22912b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:46:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.477,
+        "source": "telemetry"
+      },
+      {
+        "id": "1a88410fbf672c10",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:46:00+00:00",
+        "signal": "throughput_pph",
+        "value": 167.474,
+        "source": "telemetry"
+      },
+      {
+        "id": "4809b597ad503639",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:46:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.143,
+        "source": "telemetry"
+      },
+      {
+        "id": "525b8042269ab592",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:47:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.075,
+        "source": "telemetry"
+      },
+      {
+        "id": "38f23a32e7017e10",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:47:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.558,
+        "source": "telemetry"
+      },
+      {
+        "id": "c1c42e7f53f7f919",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:47:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.31,
+        "source": "telemetry"
+      },
+      {
+        "id": "257854789eb406c7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:47:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.465,
+        "source": "telemetry"
+      },
+      {
+        "id": "f5c1908bcda664ff",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:47:00+00:00",
+        "signal": "throughput_pph",
+        "value": 160.232,
+        "source": "telemetry"
+      },
+      {
+        "id": "e9bc69ca26e4cdf7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:47:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.202,
+        "source": "telemetry"
+      },
+      {
+        "id": "d23a85601b12d17d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:48:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.538,
+        "source": "telemetry"
+      },
+      {
+        "id": "c9fa9532e0cc7606",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:48:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.536,
+        "source": "telemetry"
+      },
+      {
+        "id": "c4a277ba0267e24e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:48:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.421,
+        "source": "telemetry"
+      },
+      {
+        "id": "50a6682bdf1d8a55",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:48:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.524,
+        "source": "telemetry"
+      },
+      {
+        "id": "a97a7bb5d734636b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:48:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.058,
+        "source": "telemetry"
+      },
+      {
+        "id": "008dd1fe56a3b679",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:48:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.532,
+        "source": "telemetry"
+      },
+      {
+        "id": "524954fedc3ef967",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:49:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.037,
+        "source": "telemetry"
+      },
+      {
+        "id": "bf686b199b0e48f9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:49:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.468,
+        "source": "telemetry"
+      },
+      {
+        "id": "054e52fb3300451e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:49:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.379,
+        "source": "telemetry"
+      },
+      {
+        "id": "b5af8427e18e74bf",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:49:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.307,
+        "source": "telemetry"
+      },
+      {
+        "id": "fa31fe1e0f79f518",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:49:00+00:00",
+        "signal": "throughput_pph",
+        "value": 164.806,
+        "source": "telemetry"
+      },
+      {
+        "id": "1b566d42f03da30d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:49:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.572,
+        "source": "telemetry"
+      },
+      {
+        "id": "4e768d4bc391e6c0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:50:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.781,
+        "source": "telemetry"
+      },
+      {
+        "id": "b81956c5d85fb4ad",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:50:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.542,
+        "source": "telemetry"
+      },
+      {
+        "id": "16331363b0f88204",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:50:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.681,
+        "source": "telemetry"
+      },
+      {
+        "id": "e300bca2bac673d8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:50:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.799,
+        "source": "telemetry"
+      },
+      {
+        "id": "6bfb0454aa1e64dd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:50:00+00:00",
+        "signal": "throughput_pph",
+        "value": 166.097,
+        "source": "telemetry"
+      },
+      {
+        "id": "1254e1497b927788",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:50:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.551,
+        "source": "telemetry"
+      },
+      {
+        "id": "409a5535423f825f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:51:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.302,
+        "source": "telemetry"
+      },
+      {
+        "id": "eb5a245382c315d6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:51:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.508,
+        "source": "telemetry"
+      },
+      {
+        "id": "b2edf46e08413d26",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:51:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.959,
+        "source": "telemetry"
+      },
+      {
+        "id": "e81a3dca2cb93769",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:51:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.269,
+        "source": "telemetry"
+      },
+      {
+        "id": "8200799d88537881",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:51:00+00:00",
+        "signal": "throughput_pph",
+        "value": 165.424,
+        "source": "telemetry"
+      },
+      {
+        "id": "28d9a97533f177a4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:51:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.744,
+        "source": "telemetry"
+      },
+      {
+        "id": "da51c79b946f69f1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:52:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.939,
+        "source": "telemetry"
+      },
+      {
+        "id": "689da8a76c30a98f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:52:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.451,
+        "source": "telemetry"
+      },
+      {
+        "id": "5e381d44f1d5141a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:52:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.675,
+        "source": "telemetry"
+      },
+      {
+        "id": "bc36d9b5e4f0a474",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:52:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.134,
+        "source": "telemetry"
+      },
+      {
+        "id": "fe49fb4bfb99106a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:52:00+00:00",
+        "signal": "throughput_pph",
+        "value": 164.33,
+        "source": "telemetry"
+      },
+      {
+        "id": "5f947be3ab6f20c1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:52:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.82,
+        "source": "telemetry"
+      },
+      {
+        "id": "f1d12f1bb7df5667",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:53:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.962,
+        "source": "telemetry"
+      },
+      {
+        "id": "bed79711db5c4947",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:53:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.392,
+        "source": "telemetry"
+      },
+      {
+        "id": "456f6d24a5736583",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:53:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.822,
+        "source": "telemetry"
+      },
+      {
+        "id": "2b58a3886075e05d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:53:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.479,
+        "source": "telemetry"
+      },
+      {
+        "id": "94bc97aa96533060",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:53:00+00:00",
+        "signal": "throughput_pph",
+        "value": 169.463,
+        "source": "telemetry"
+      },
+      {
+        "id": "63ace5e3c6e62c74",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:53:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 6.95,
+        "source": "telemetry"
+      },
+      {
+        "id": "21b861641f879e92",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:54:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.684,
+        "source": "telemetry"
+      },
+      {
+        "id": "9bea3dba4a9c2003",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:54:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.437,
+        "source": "telemetry"
+      },
+      {
+        "id": "d320692522d90c0d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:54:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.772,
+        "source": "telemetry"
+      },
+      {
+        "id": "b2e0292ec3281526",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:54:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.379,
+        "source": "telemetry"
+      },
+      {
+        "id": "836b66773665bf92",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:54:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.441,
+        "source": "telemetry"
+      },
+      {
+        "id": "552d3b86c0f819b6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:54:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.109,
+        "source": "telemetry"
+      },
+      {
+        "id": "29c8825023085be4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:55:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.261,
+        "source": "telemetry"
+      },
+      {
+        "id": "17c9c1467998b4a3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:55:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.434,
+        "source": "telemetry"
+      },
+      {
+        "id": "3a9d67d1b288d99c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:55:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.029,
+        "source": "telemetry"
+      },
+      {
+        "id": "dd952e7bb7ff14cf",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:55:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.139,
+        "source": "telemetry"
+      },
+      {
+        "id": "b17ddf3230dbac8e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:55:00+00:00",
+        "signal": "throughput_pph",
+        "value": 163.788,
+        "source": "telemetry"
+      },
+      {
+        "id": "b80d10d8d6c96715",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:55:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.194,
+        "source": "telemetry"
+      },
+      {
+        "id": "91674c0e8df5a2ed",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:56:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.48,
+        "source": "telemetry"
+      },
+      {
+        "id": "bd1627d8a2a6a335",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:56:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.499,
+        "source": "telemetry"
+      },
+      {
+        "id": "5de53c44ff5d793e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:56:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.621,
+        "source": "telemetry"
+      },
+      {
+        "id": "2df0c5aa18256a3f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:56:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.525,
+        "source": "telemetry"
+      },
+      {
+        "id": "44fd3be2f7a27e21",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:56:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.327,
+        "source": "telemetry"
+      },
+      {
+        "id": "5c5386ef5766532e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:56:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.305,
+        "source": "telemetry"
+      },
+      {
+        "id": "ef63c5272adc81d4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:57:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.375,
+        "source": "telemetry"
+      },
+      {
+        "id": "92e744bf15e8a3d5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:57:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.591,
+        "source": "telemetry"
+      },
+      {
+        "id": "19aa896575bd8012",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:57:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.895,
+        "source": "telemetry"
+      },
+      {
+        "id": "9fd53b527b5b6a32",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:57:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.164,
+        "source": "telemetry"
+      },
+      {
+        "id": "df171f1dd2419f26",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:57:00+00:00",
+        "signal": "throughput_pph",
+        "value": 158.435,
+        "source": "telemetry"
+      },
+      {
+        "id": "003d2ac40697a65c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:57:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.448,
+        "source": "telemetry"
+      },
+      {
+        "id": "c4c30b51212fb475",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:58:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.427,
+        "source": "telemetry"
+      },
+      {
+        "id": "5e0fd011ea58081d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:58:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.486,
+        "source": "telemetry"
+      },
+      {
+        "id": "ecf87e411f4d889f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:58:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.285,
+        "source": "telemetry"
+      },
+      {
+        "id": "3ed2dec974b922c8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:58:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.177,
+        "source": "telemetry"
+      },
+      {
+        "id": "e78afef76ae121d2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:58:00+00:00",
+        "signal": "throughput_pph",
+        "value": 160.962,
+        "source": "telemetry"
+      },
+      {
+        "id": "3abbc958f553c9bf",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:58:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.506,
+        "source": "telemetry"
+      },
+      {
+        "id": "6cd3c8864452048f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:59:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.614,
+        "source": "telemetry"
+      },
+      {
+        "id": "bfa43f22fbbfedc4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:59:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.482,
+        "source": "telemetry"
+      },
+      {
+        "id": "75e8bb66883b6649",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:59:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.56,
+        "source": "telemetry"
+      },
+      {
+        "id": "5d77893d27863be0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:59:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.158,
+        "source": "telemetry"
+      },
+      {
+        "id": "58f74a869ae0462b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:59:00+00:00",
+        "signal": "throughput_pph",
+        "value": 162.694,
+        "source": "telemetry"
+      },
+      {
+        "id": "9cdfd04ef5d4969e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T03:59:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.615,
+        "source": "telemetry"
+      },
+      {
+        "id": "c901faf397c5e45c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:00:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.806,
+        "source": "telemetry"
+      },
+      {
+        "id": "b28f8af515a9abfe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:00:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.431,
+        "source": "telemetry"
+      },
+      {
+        "id": "af82517f464653ca",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:00:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.304,
+        "source": "telemetry"
+      },
+      {
+        "id": "ef7b4fb632199b06",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:00:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.679,
+        "source": "telemetry"
+      },
+      {
+        "id": "19aad841bb3fc3ec",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:00:00+00:00",
+        "signal": "throughput_pph",
+        "value": 163.304,
+        "source": "telemetry"
+      },
+      {
+        "id": "d96c6a3673a500c5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:00:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.742,
+        "source": "telemetry"
+      },
+      {
+        "id": "cea30107b3e418fe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:01:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.903,
+        "source": "telemetry"
+      },
+      {
+        "id": "65ae7e9c2a82f2a6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:01:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.559,
+        "source": "telemetry"
+      },
+      {
+        "id": "560fa1b4e3431da0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:01:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.064,
+        "source": "telemetry"
+      },
+      {
+        "id": "7cf190ba32fe65ec",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:01:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.184,
+        "source": "telemetry"
+      },
+      {
+        "id": "8cb31c96a8e911d7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:01:00+00:00",
+        "signal": "throughput_pph",
+        "value": 160.152,
+        "source": "telemetry"
+      },
+      {
+        "id": "48bfecd08d803c7e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:01:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.842,
+        "source": "telemetry"
+      },
+      {
+        "id": "e4e25cd112348465",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:02:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.742,
+        "source": "telemetry"
+      },
+      {
+        "id": "c9f9c5fdc8cb1bb8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:02:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.482,
+        "source": "telemetry"
+      },
+      {
+        "id": "647ffdf68b276dc7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:02:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.862,
+        "source": "telemetry"
+      },
+      {
+        "id": "dc44a74b690c2492",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:02:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.443,
+        "source": "telemetry"
+      },
+      {
+        "id": "e567fc63b0de074e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:02:00+00:00",
+        "signal": "throughput_pph",
+        "value": 157.102,
+        "source": "telemetry"
+      },
+      {
+        "id": "f3d41c95a1554ffc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:02:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.968,
+        "source": "telemetry"
+      },
+      {
+        "id": "c6af083f0ab3135c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:03:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.86,
+        "source": "telemetry"
+      },
+      {
+        "id": "22325387875de754",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:03:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.49,
+        "source": "telemetry"
+      },
+      {
+        "id": "bb7adc20b344dde8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:03:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.482,
+        "source": "telemetry"
+      },
+      {
+        "id": "a38062c7c3d73eb1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:03:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.015,
+        "source": "telemetry"
+      },
+      {
+        "id": "43b885a42bbe16e4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:03:00+00:00",
+        "signal": "throughput_pph",
+        "value": 160.652,
+        "source": "telemetry"
+      },
+      {
+        "id": "14460a52e890395b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:03:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 7.996,
+        "source": "telemetry"
+      },
+      {
+        "id": "f4d158f5715fd395",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:04:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.418,
+        "source": "telemetry"
+      },
+      {
+        "id": "508b9e30f1c7e4ed",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:04:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.425,
+        "source": "telemetry"
+      },
+      {
+        "id": "f90dcf97836dc933",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:04:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.504,
+        "source": "telemetry"
+      },
+      {
+        "id": "78815501c49e3635",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:04:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.965,
+        "source": "telemetry"
+      },
+      {
+        "id": "eec455205db914e9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:04:00+00:00",
+        "signal": "throughput_pph",
+        "value": 156.71,
+        "source": "telemetry"
+      },
+      {
+        "id": "43b897d905dc4824",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:04:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.151,
+        "source": "telemetry"
+      },
+      {
+        "id": "cd77ace55b2df653",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:05:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.23,
+        "source": "telemetry"
+      },
+      {
+        "id": "6a7e6bf6faf6b0a7",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:05:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.442,
+        "source": "telemetry"
+      },
+      {
+        "id": "b8a446068a1a474b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:05:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.157,
+        "source": "telemetry"
+      },
+      {
+        "id": "ee8953b8bef443b9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:05:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.382,
+        "source": "telemetry"
+      },
+      {
+        "id": "5e84901afce44589",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:05:00+00:00",
+        "signal": "throughput_pph",
+        "value": 155.28,
+        "source": "telemetry"
+      },
+      {
+        "id": "f6fc2dcc535d149e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:05:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.305,
+        "source": "telemetry"
+      },
+      {
+        "id": "11113ab9def2fa9b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:06:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.794,
+        "source": "telemetry"
+      },
+      {
+        "id": "ac0306c9f01dc7a0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:06:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.505,
+        "source": "telemetry"
+      },
+      {
+        "id": "cfec2337e4ae005d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:06:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.241,
+        "source": "telemetry"
+      },
+      {
+        "id": "8d8c0225df4017dc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:06:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.679,
+        "source": "telemetry"
+      },
+      {
+        "id": "b6aa695c832280ae",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:06:00+00:00",
+        "signal": "throughput_pph",
+        "value": 159.151,
+        "source": "telemetry"
+      },
+      {
+        "id": "14b19041557e8c20",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:06:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.363,
+        "source": "telemetry"
+      },
+      {
+        "id": "1afd6b6ca8630bb2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:07:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.061,
+        "source": "telemetry"
+      },
+      {
+        "id": "c91862ce8eefd7ae",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:07:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.521,
+        "source": "telemetry"
+      },
+      {
+        "id": "fe0dda7506667eb3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:07:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.934,
+        "source": "telemetry"
+      },
+      {
+        "id": "69b8ec602bd04027",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:07:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.031,
+        "source": "telemetry"
+      },
+      {
+        "id": "625a797b770e8d7a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:07:00+00:00",
+        "signal": "throughput_pph",
+        "value": 154.137,
+        "source": "telemetry"
+      },
+      {
+        "id": "805306bffbc43624",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:07:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.521,
+        "source": "telemetry"
+      },
+      {
+        "id": "2b451c753c699568",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:08:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.082,
+        "source": "telemetry"
+      },
+      {
+        "id": "ace69e9bb240da83",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:08:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.488,
+        "source": "telemetry"
+      },
+      {
+        "id": "ee1d3fb21c92ddc0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:08:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.772,
+        "source": "telemetry"
+      },
+      {
+        "id": "869110eaebcb09eb",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:08:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.709,
+        "source": "telemetry"
+      },
+      {
+        "id": "0bc9d5634429bc04",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:08:00+00:00",
+        "signal": "throughput_pph",
+        "value": 156.326,
+        "source": "telemetry"
+      },
+      {
+        "id": "b5667069a65ae49f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:08:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.605,
+        "source": "telemetry"
+      },
+      {
+        "id": "986ae4a8b5ac6d0a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:09:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.366,
+        "source": "telemetry"
+      },
+      {
+        "id": "1c0e1c63beceef44",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:09:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.517,
+        "source": "telemetry"
+      },
+      {
+        "id": "6094c2b814e71461",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:09:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.46,
+        "source": "telemetry"
+      },
+      {
+        "id": "1095a95f5006468e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:09:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.792,
+        "source": "telemetry"
+      },
+      {
+        "id": "78060834ccc5ad15",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:09:00+00:00",
+        "signal": "throughput_pph",
+        "value": 163.055,
+        "source": "telemetry"
+      },
+      {
+        "id": "6dac97e67d306748",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:09:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.665,
+        "source": "telemetry"
+      },
+      {
+        "id": "a0086fb2d70f23c5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:10:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.608,
+        "source": "telemetry"
+      },
+      {
+        "id": "0a227d0df5034b76",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:10:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.473,
+        "source": "telemetry"
+      },
+      {
+        "id": "369bd2ded5ce933c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:10:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.758,
+        "source": "telemetry"
+      },
+      {
+        "id": "429c90a68decf255",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:10:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.044,
+        "source": "telemetry"
+      },
+      {
+        "id": "0ac0d150aa7dc69d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:10:00+00:00",
+        "signal": "throughput_pph",
+        "value": 160.427,
+        "source": "telemetry"
+      },
+      {
+        "id": "f069767e61d69989",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:10:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.757,
+        "source": "telemetry"
+      },
+      {
+        "id": "8461f398be81fc49",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:11:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.126,
+        "source": "telemetry"
+      },
+      {
+        "id": "70d889d1f7f656e3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:11:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.453,
+        "source": "telemetry"
+      },
+      {
+        "id": "41cf6aabf06429b3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:11:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.24,
+        "source": "telemetry"
+      },
+      {
+        "id": "72830f1e4e2c7055",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:11:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.415,
+        "source": "telemetry"
+      },
+      {
+        "id": "4ee9ab9f6bf1c653",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:11:00+00:00",
+        "signal": "throughput_pph",
+        "value": 155.608,
+        "source": "telemetry"
+      },
+      {
+        "id": "e70944ed63242037",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:11:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 8.956,
+        "source": "telemetry"
+      },
+      {
+        "id": "36cb9860cf06e54d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:12:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.093,
+        "source": "telemetry"
+      },
+      {
+        "id": "da76ddecb763f5d5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:12:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.485,
+        "source": "telemetry"
+      },
+      {
+        "id": "cc9ab29b687d0849",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:12:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.767,
+        "source": "telemetry"
+      },
+      {
+        "id": "e815caef2dd55d6a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:12:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 29.556,
+        "source": "telemetry"
+      },
+      {
+        "id": "f25271bb77095d8b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:12:00+00:00",
+        "signal": "throughput_pph",
+        "value": 155.79,
+        "source": "telemetry"
+      },
+      {
+        "id": "b53d82a31ea7fbe1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:12:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.011,
+        "source": "telemetry"
+      },
+      {
+        "id": "c166244292eeeedd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:13:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.491,
+        "source": "telemetry"
+      },
+      {
+        "id": "6730727d53ece2dc",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:13:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.467,
+        "source": "telemetry"
+      },
+      {
+        "id": "8c737e6dfc9ec5db",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:13:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.73,
+        "source": "telemetry"
+      },
+      {
+        "id": "f8d12eeefc37050c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:13:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.548,
+        "source": "telemetry"
+      },
+      {
+        "id": "5b219bea5b75aaa6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:13:00+00:00",
+        "signal": "throughput_pph",
+        "value": 153.215,
+        "source": "telemetry"
+      },
+      {
+        "id": "f8d836bb3c0f6ae8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:13:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.162,
+        "source": "telemetry"
+      },
+      {
+        "id": "ed1fc49d7605685d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:14:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.208,
+        "source": "telemetry"
+      },
+      {
+        "id": "2bd538a5ae39bce0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:14:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.583,
+        "source": "telemetry"
+      },
+      {
+        "id": "f3f8496e221af105",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:14:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.677,
+        "source": "telemetry"
+      },
+      {
+        "id": "67f0903b46e832d4",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:14:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.789,
+        "source": "telemetry"
+      },
+      {
+        "id": "9de3f11adb78d660",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:14:00+00:00",
+        "signal": "throughput_pph",
+        "value": 155.073,
+        "source": "telemetry"
+      },
+      {
+        "id": "096b30174176cd5c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:14:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.281,
+        "source": "telemetry"
+      },
+      {
+        "id": "e7f7e508d5d72236",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:15:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 52.923,
+        "source": "telemetry"
+      },
+      {
+        "id": "b61578a841126461",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:15:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.409,
+        "source": "telemetry"
+      },
+      {
+        "id": "391707658281cc57",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:15:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 63.176,
+        "source": "telemetry"
+      },
+      {
+        "id": "e40aa2b14f40d976",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:15:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.927,
+        "source": "telemetry"
+      },
+      {
+        "id": "c75421e4d578102c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:15:00+00:00",
+        "signal": "throughput_pph",
+        "value": 153.719,
+        "source": "telemetry"
+      },
+      {
+        "id": "0dd6b6cdd14561ca",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:15:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.27,
+        "source": "telemetry"
+      },
+      {
+        "id": "736f87d8d8f4741c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:16:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.783,
+        "source": "telemetry"
+      },
+      {
+        "id": "c3ef74f5898b7de0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:16:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.561,
+        "source": "telemetry"
+      },
+      {
+        "id": "1a0d195b292346b2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:16:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 64.215,
+        "source": "telemetry"
+      },
+      {
+        "id": "9fa444b26177d822",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:16:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.263,
+        "source": "telemetry"
+      },
+      {
+        "id": "b9ee933bfd957a86",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:16:00+00:00",
+        "signal": "throughput_pph",
+        "value": 155.998,
+        "source": "telemetry"
+      },
+      {
+        "id": "9c6e689babe8e1c2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:16:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.399,
+        "source": "telemetry"
+      },
+      {
+        "id": "ff3841f7ee556c80",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:17:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.801,
+        "source": "telemetry"
+      },
+      {
+        "id": "3888ab246037756c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:17:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.463,
+        "source": "telemetry"
+      },
+      {
+        "id": "9130c4f097fb4c00",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:17:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.532,
+        "source": "telemetry"
+      },
+      {
+        "id": "cef51ba7007baa0b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:17:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.871,
+        "source": "telemetry"
+      },
+      {
+        "id": "89d75d6e62669146",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:17:00+00:00",
+        "signal": "throughput_pph",
+        "value": 150.616,
+        "source": "telemetry"
+      },
+      {
+        "id": "895c99780b89ac7a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:17:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.592,
+        "source": "telemetry"
+      },
+      {
+        "id": "2999ab8fde37c08d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:18:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.992,
+        "source": "telemetry"
+      },
+      {
+        "id": "0224d52954e25106",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:18:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.559,
+        "source": "telemetry"
+      },
+      {
+        "id": "af1547bc3a6a1753",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:18:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.224,
+        "source": "telemetry"
+      },
+      {
+        "id": "a4b8a80dce44aec9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:18:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.945,
+        "source": "telemetry"
+      },
+      {
+        "id": "f9bb5cf9f0e87b0f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:18:00+00:00",
+        "signal": "throughput_pph",
+        "value": 151.783,
+        "source": "telemetry"
+      },
+      {
+        "id": "9432cfafcbfe29c5",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:18:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.691,
+        "source": "telemetry"
+      },
+      {
+        "id": "d703390f6381e1d8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:19:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.156,
+        "source": "telemetry"
+      },
+      {
+        "id": "0c3642e68b12b65c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:19:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.402,
+        "source": "telemetry"
+      },
+      {
+        "id": "3d8f8d8440cbfc8a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:19:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.684,
+        "source": "telemetry"
+      },
+      {
+        "id": "eb867f74acfc0c47",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:19:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.14,
+        "source": "telemetry"
+      },
+      {
+        "id": "8708c9671fdc6d74",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:19:00+00:00",
+        "signal": "throughput_pph",
+        "value": 156.283,
+        "source": "telemetry"
+      },
+      {
+        "id": "a82e61f68ea5f095",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:19:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.938,
+        "source": "telemetry"
+      },
+      {
+        "id": "71d9267872ac8391",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:20:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.256,
+        "source": "telemetry"
+      },
+      {
+        "id": "8b1940ee8bc155fd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:20:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.481,
+        "source": "telemetry"
+      },
+      {
+        "id": "cab84bce83217512",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:20:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.778,
+        "source": "telemetry"
+      },
+      {
+        "id": "8ca8b7986d0b897c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:20:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.432,
+        "source": "telemetry"
+      },
+      {
+        "id": "d5e7db870b5517ba",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:20:00+00:00",
+        "signal": "throughput_pph",
+        "value": 149.263,
+        "source": "telemetry"
+      },
+      {
+        "id": "4bec5722293bab1e",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:20:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.849,
+        "source": "telemetry"
+      },
+      {
+        "id": "e3b6c34b99d18ba3",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:21:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.821,
+        "source": "telemetry"
+      },
+      {
+        "id": "7962218fb77e66f6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:21:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.435,
+        "source": "telemetry"
+      },
+      {
+        "id": "90375b4e3141da23",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:21:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.818,
+        "source": "telemetry"
+      },
+      {
+        "id": "1272c7f4f68ccade",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:21:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.95,
+        "source": "telemetry"
+      },
+      {
+        "id": "58a49a6e7d3fc80a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:21:00+00:00",
+        "signal": "throughput_pph",
+        "value": 148.488,
+        "source": "telemetry"
+      },
+      {
+        "id": "226fdb3fc7ffb0c9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:21:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 9.984,
+        "source": "telemetry"
+      },
+      {
+        "id": "350bda67c4659146",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:22:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.287,
+        "source": "telemetry"
+      },
+      {
+        "id": "9b44d4eee1fd2006",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:22:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.523,
+        "source": "telemetry"
+      },
+      {
+        "id": "be3588204165a07b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:22:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.876,
+        "source": "telemetry"
+      },
+      {
+        "id": "dfaa4f88e1dfb836",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:22:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.966,
+        "source": "telemetry"
+      },
+      {
+        "id": "ba9bc4cb1ffeb636",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:22:00+00:00",
+        "signal": "throughput_pph",
+        "value": 152.339,
+        "source": "telemetry"
+      },
+      {
+        "id": "c413c8a7f5e28cba",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:22:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.087,
+        "source": "telemetry"
+      },
+      {
+        "id": "7e3e65b389c4e072",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:23:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.494,
+        "source": "telemetry"
+      },
+      {
+        "id": "c1f95a94149fab6f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:23:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.566,
+        "source": "telemetry"
+      },
+      {
+        "id": "7f8b04f1823d5355",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:23:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.839,
+        "source": "telemetry"
+      },
+      {
+        "id": "70300307b333886f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:23:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.545,
+        "source": "telemetry"
+      },
+      {
+        "id": "8dec3539a0c3597d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:23:00+00:00",
+        "signal": "throughput_pph",
+        "value": 152.617,
+        "source": "telemetry"
+      },
+      {
+        "id": "5348c30faaf21d76",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:23:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.318,
+        "source": "telemetry"
+      },
+      {
+        "id": "115a5b1d43a13caf",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:24:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.764,
+        "source": "telemetry"
+      },
+      {
+        "id": "88ced80b1f6cd70a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:24:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.497,
+        "source": "telemetry"
+      },
+      {
+        "id": "cf6f0d26e77ffbbe",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:24:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.615,
+        "source": "telemetry"
+      },
+      {
+        "id": "04b70f3d80da0e5c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:24:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.257,
+        "source": "telemetry"
+      },
+      {
+        "id": "6c491c6c703d8332",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:24:00+00:00",
+        "signal": "throughput_pph",
+        "value": 148.054,
+        "source": "telemetry"
+      },
+      {
+        "id": "3fd0e9fc3e16ce01",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:24:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.354,
+        "source": "telemetry"
+      },
+      {
+        "id": "83037019fc5dde46",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:25:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 56.47,
+        "source": "telemetry"
+      },
+      {
+        "id": "290a13471383ddf1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:25:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.471,
+        "source": "telemetry"
+      },
+      {
+        "id": "7a5d977ba520ffd2",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:25:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.427,
+        "source": "telemetry"
+      },
+      {
+        "id": "eaa61d709fbae399",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:25:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.047,
+        "source": "telemetry"
+      },
+      {
+        "id": "7ba200b78752410f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:25:00+00:00",
+        "signal": "throughput_pph",
+        "value": 153.239,
+        "source": "telemetry"
+      },
+      {
+        "id": "ae692ef5f39732b8",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:25:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.519,
+        "source": "telemetry"
+      },
+      {
+        "id": "f1cc6c9842225fc6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:26:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 53.93,
+        "source": "telemetry"
+      },
+      {
+        "id": "a97276038ea89183",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:26:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.536,
+        "source": "telemetry"
+      },
+      {
+        "id": "edaa677c8f775f57",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:26:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.866,
+        "source": "telemetry"
+      },
+      {
+        "id": "2ca27ae4f5bf2f92",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:26:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.138,
+        "source": "telemetry"
+      },
+      {
+        "id": "793620ee4bb6633a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:26:00+00:00",
+        "signal": "throughput_pph",
+        "value": 145.821,
+        "source": "telemetry"
+      },
+      {
+        "id": "9d0e83ceaf14ef9b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:26:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.616,
+        "source": "telemetry"
+      },
+      {
+        "id": "e8fafe79577a1f41",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:27:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.684,
+        "source": "telemetry"
+      },
+      {
+        "id": "f6796f8e73d7af5f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:27:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.522,
+        "source": "telemetry"
+      },
+      {
+        "id": "5d16b071c19ad67a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:27:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.603,
+        "source": "telemetry"
+      },
+      {
+        "id": "41f1c981364a35fd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:27:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.377,
+        "source": "telemetry"
+      },
+      {
+        "id": "6475c7bfc39a849c",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:27:00+00:00",
+        "signal": "throughput_pph",
+        "value": 152.858,
+        "source": "telemetry"
+      },
+      {
+        "id": "08e4fd6ed6f75c2a",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:27:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.712,
+        "source": "telemetry"
+      },
+      {
+        "id": "d777f0e4af4c74ab",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:28:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 54.444,
+        "source": "telemetry"
+      },
+      {
+        "id": "6cac689e7020c6b0",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:28:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.49,
+        "source": "telemetry"
+      },
+      {
+        "id": "615f9fddb8bc0a2d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:28:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 61.617,
+        "source": "telemetry"
+      },
+      {
+        "id": "9f92463c5136afe9",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:28:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.391,
+        "source": "telemetry"
+      },
+      {
+        "id": "de7ff74e3c35fc1f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:28:00+00:00",
+        "signal": "throughput_pph",
+        "value": 153.525,
+        "source": "telemetry"
+      },
+      {
+        "id": "4b8a9aded811fd7b",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:28:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.781,
+        "source": "telemetry"
+      },
+      {
+        "id": "855717ff00c82f75",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:29:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.8,
+        "source": "telemetry"
+      },
+      {
+        "id": "385f9835c5ad9216",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:29:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.489,
+        "source": "telemetry"
+      },
+      {
+        "id": "099b228eeab4cf6f",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:29:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 62.655,
+        "source": "telemetry"
+      },
+      {
+        "id": "3923215319f75b34",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:29:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 27.691,
+        "source": "telemetry"
+      },
+      {
+        "id": "cc11579b552e2496",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:29:00+00:00",
+        "signal": "throughput_pph",
+        "value": 149.131,
+        "source": "telemetry"
+      },
+      {
+        "id": "2d895fa01b4ff407",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:29:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 10.976,
+        "source": "telemetry"
+      },
+      {
+        "id": "3a5e3bd300c1859d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:30:00+00:00",
+        "signal": "spindle_temp_c",
+        "value": 55.911,
+        "source": "telemetry"
+      },
+      {
+        "id": "b4d5f9ce91f625c1",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:30:00+00:00",
+        "signal": "vibration_mm_s",
+        "value": 2.501,
+        "source": "telemetry"
+      },
+      {
+        "id": "d472d98370aaedf6",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:30:00+00:00",
+        "signal": "spindle_load_pct",
+        "value": 60.785,
+        "source": "telemetry"
+      },
+      {
+        "id": "76af3ee4e90d4069",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:30:00+00:00",
+        "signal": "coolant_flow_lpm",
+        "value": 28.228,
+        "source": "telemetry"
+      },
+      {
+        "id": "7f6744d07323ea96",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:30:00+00:00",
+        "signal": "throughput_pph",
+        "value": 153.302,
+        "source": "telemetry"
+      },
+      {
+        "id": "b3b9ac0dd4cae23d",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:30:00+00:00",
+        "signal": "defect_rate_pct",
+        "value": 11.094,
+        "source": "telemetry"
+      }
+    ],
+    "maintenance": [],
+    "mes": [
+      {
+        "id": "81dd5d9cca9379dd",
+        "machine": "CNC-17",
+        "ts": "2026-07-08T04:20:00+00:00",
+        "event": "error_code",
+        "detail": "Quality alarm: defect rate high",
+        "code": "E-QAL-07",
+        "source": "mes"
+      }
+    ],
+    "past_incidents": [
+      {
+        "incident_id": "PAST-bbe4629fde4e9738",
+        "asset": "CNC-17",
+        "root_cause_category": "tool_wear",
+        "window_start": "2026-06-29T03:00:00+00:00",
+        "window_end": "2026-06-29T03:00:00+00:00",
+        "summary": "Earlier tool_wear event on CNC-17."
+      }
+    ],
+    "reliability": {
+      "telemetry": 1.0,
+      "maintenance": 0.5,
+      "mes": 1.0
+    }
+  }
+}
