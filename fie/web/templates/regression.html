@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Regression · Factory Incident Engine{% endblock %}
+{% block body %}
+<p class="muted"><a href="/">← Control Room</a></p>
+<h1>Replay / Regression</h1>
+<p class="muted">Candidate engine replayed against captured production traces —
+their snapshotted inputs, not live data — so the diff is attributable purely to
+the engine change.</p>
+
+<div class="grid cards">
+  <div class="panel"><div class="label">Baseline</div>
+    <div class="stat small mono">{{ rep.old_engine }}</div>
+    <div class="muted">accuracy {{ (rep.old_accuracy*100)|round(0,'floor') }}%</div></div>
+  <div class="panel"><div class="label">Candidate</div>
+    <div class="stat small mono">{{ rep.new_engine }}</div>
+    <div class="muted">accuracy {{ (rep.new_accuracy*100)|round(0,'floor') }}%</div></div>
+  <div class="panel"><div class="label">Fixed</div>
+    <div class="stat" style="color:var(--ok)">{{ rep.fixed }}</div></div>
+  <div class="panel"><div class="label">Regressed</div>
+    <div class="stat" style="color:{{ 'var(--crit)' if rep.regressed else 'var(--dim)' }}">
+      {{ rep.regressed }}</div></div>
+  <div class="panel"><div class="label">Verdict</div>
+    <div class="verdict {{ rep.verdict }}">{{ rep.verdict }}</div></div>
+</div>
+
+<h2>Per-incident diff</h2>
+<div class="panel">
+  <table>
+    <tr><th>Incident</th><th>Asset</th><th>Expected</th><th>Baseline</th>
+        <th>Candidate</th><th>Status</th></tr>
+    {% for r in rep.rows %}
+    <tr>
+      <td class="mono"><a href="/incident/{{ r.incident_id }}">{{ r.incident_id }}</a></td>
+      <td class="mono">{{ r.asset }}</td>
+      <td class="mono muted">{{ r.expected }}</td>
+      <td><span style="color:{{ cat_color(r.old_category) }}">{{ r.old_category }}</span></td>
+      <td><span style="color:{{ cat_color(r.new_category) }}">{{ r.new_category }}</span></td>
+      <td>
+        {% if r.status == 'fixed' %}<span class="pill ok">FIXED</span>
+        {% elif r.status == 'regressed' %}<span class="pill blocked">REGRESSED</span>
+        {% elif r.status == 'unchanged_correct' %}<span class="muted">ok</span>
+        {% else %}<span class="muted">{{ r.status }}</span>{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

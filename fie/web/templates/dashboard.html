@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Control Room</h1>
+
+{% if counts.telemetry == 0 %}
+  <div class="panel warnbox">No data yet. Run <code>fie demo</code> (or
+  <code>make demo</code>) to simulate a plant feed, ingest it, and reconstruct
+  incidents, then refresh.</div>
+{% else %}
+
+<div class="grid cards">
+  <div class="panel"><div class="label">Telemetry frames</div>
+    <div class="stat">{{ "{:,}".format(counts.telemetry) }}</div></div>
+  <div class="panel"><div class="label">Incidents</div>
+    <div class="stat">{{ counts.incidents }}</div></div>
+  <div class="panel"><div class="label">Dead-lettered</div>
+    <div class="stat" style="color:var(--warn)">{{ counts.dlq }}</div>
+    <div class="muted mono" style="font-size:11px">
+      {% for k,v in dlq.items() %}{{k}}:{{v}} {% endfor %}</div></div>
+  <div class="panel"><div class="label">Schema drift</div>
+    <div class="stat">{{ drift|length }}</div>
+    <div class="muted mono" style="font-size:11px">
+      {% for d in drift %}{{d.field}}·{{d.kind}} {% endfor %}</div></div>
+</div>
+
+<h2>Data-Reliability Gate</h2>
+<div class="panel">
+  <table>
+    <tr><th>Asset</th><th>Window start</th><th>Telemetry reliability</th><th>Gate</th></tr>
+    {% for row in rel_rows %}
+    <tr>
+      <td class="mono">{{ row.asset }}</td>
+      <td class="mono muted">{{ row.start }}</td>
+      <td style="width:260px"><div class="conf">
+        <div class="meter"><i style="width:{{ (row.rel.overall*100)|round(0,'floor') }}%"></i></div>
+        <span class="mono">{{ (row.rel.overall*100)|round(0,'floor') }}%</span></div></td>
+      <td>{% if row.rel.blocked %}<span class="pill blocked">BLOCKED</span>
+          {% else %}<span class="pill ok">OK</span>{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+<h2>Reconstructed Incidents</h2>
+<div class="panel">
+  <table>
+    <tr><th>Incident</th><th>Asset</th><th>Root cause</th><th>Confidence</th><th></th></tr>
+    {% for r in incidents %}
+    <tr>
+      <td class="mono"><a href="/incident/{{ r.incident_id }}">{{ r.incident_id }}</a></td>
+      <td class="mono">{{ r.asset }}</td>
+      <td><span class="badge" style="color:{{ cat_color(r.root_cause_category) }}">
+          {{ r.root_cause_category }}</span></td>
+      <td class="mono">{{ (r.confidence*100)|round(0,'floor') }}%</td>
+      <td>{% if r.blocked %}<span class="pill blocked">gated</span>{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endif %}
+{% endblock %}

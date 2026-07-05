@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Factory Incident Engine{% endblock %}</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#141a22; --panel2:#1b2430; --line:#263141;
+    --fg:#d7e0ea; --dim:#8595a8; --accent:#4fc3f7;
+    --ok:#57d38c; --warn:#ffb74d; --crit:#ff6b6b; --info:#7fb7ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  code,.mono{font-family:"SF Mono",ui-monospace,"Cascadia Code",Menlo,monospace}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  header{background:linear-gradient(180deg,#111823,#0d1117);border-bottom:1px solid var(--line);
+    padding:14px 24px;display:flex;align-items:center;gap:18px;position:sticky;top:0;z-index:5}
+  header .logo{font-weight:700;letter-spacing:.5px}
+  header .logo span{color:var(--accent)}
+  header nav a{color:var(--dim);margin-right:16px;font-size:13px}
+  header nav a:hover{color:var(--fg)}
+  .tag{font-size:11px;color:var(--dim);border:1px solid var(--line);border-radius:20px;padding:2px 10px}
+  main{max-width:1080px;margin:0 auto;padding:24px}
+  h1{font-size:20px;margin:4px 0 18px} h2{font-size:14px;text-transform:uppercase;
+    letter-spacing:1px;color:var(--dim);margin:26px 0 12px;font-weight:600}
+  .grid{display:grid;gap:14px}
+  .cards{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .stat{font-size:26px;font-weight:700} .stat.small{font-size:18px}
+  .stat .u{font-size:12px;color:var(--dim);font-weight:400;margin-left:4px}
+  .label{color:var(--dim);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--dim);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+  tr:hover td{background:var(--panel2)}
+  .badge{display:inline-block;padding:2px 9px;border-radius:6px;font-size:12px;font-weight:600;
+    background:#0d1117;border:1px solid var(--line)}
+  .pill{display:inline-block;padding:1px 8px;border-radius:20px;font-size:11px;font-weight:600}
+  .pill.ok{background:rgba(87,211,140,.15);color:var(--ok)}
+  .pill.blocked{background:rgba(255,107,107,.15);color:var(--crit)}
+  .meter{height:8px;background:#0d1117;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .meter > i{display:block;height:100%;background:linear-gradient(90deg,#f2545b,#ffb74d,#57d38c)}
+  .conf{display:flex;align-items:center;gap:10px}
+  .conf .meter{flex:1}
+  .sev-critical{color:var(--crit)} .sev-warn{color:var(--warn)}
+  .sev-info{color:var(--info)}
+  .rail{border-left:2px solid var(--line);margin-left:8px;padding-left:0}
+  .rail li{list-style:none;position:relative;padding:0 0 16px 22px}
+  .rail li::before{content:"";position:absolute;left:-7px;top:4px;width:10px;height:10px;
+    border-radius:50%;background:var(--dim);border:2px solid var(--bg)}
+  .rail li.sev-critical::before{background:var(--crit)}
+  .rail li.sev-warn::before{background:var(--warn)}
+  .rail li.sev-info::before{background:var(--info)}
+  .rail .ts{color:var(--dim);font-size:12px}
+  .chip{display:inline-block;font-size:10px;color:var(--dim);background:#0d1117;
+    border:1px solid var(--line);border-radius:5px;padding:1px 6px;margin:2px 3px 0 0}
+  .muted{color:var(--dim)} .warnbox{border-left:3px solid var(--warn);padding-left:12px}
+  ul.clean{margin:6px 0;padding-left:18px} ul.clean li{margin:3px 0}
+  .verdict{font-size:16px;font-weight:700;padding:6px 14px;border-radius:8px}
+  .verdict.SHIP{background:rgba(87,211,140,.15);color:var(--ok)}
+  .verdict.HOLD{background:rgba(255,107,107,.15);color:var(--crit)}
+  footer{color:var(--dim);font-size:12px;text-align:center;padding:30px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">FACTORY<span>·</span>INCIDENT<span>·</span>ENGINE</div>
+  <nav>
+    <a href="/">Control Room</a>
+    <a href="/regression">Replay / Regression</a>
+  </nav>
+  <span class="tag mono" style="margin-left:auto">v{{ version }}</span>
+</header>
+<main>{% block body %}{% endblock %}</main>
+<footer>Deterministic reconstruction · reliability-gated · replay-verified</footer>
+</body>
+</html>

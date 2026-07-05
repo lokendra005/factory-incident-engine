@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}{{ r.incident_id }} · Factory Incident Engine{% endblock %}
+{% block body %}
+<p class="muted"><a href="/">← Control Room</a></p>
+<h1>{{ r.incident_id }} <span class="muted mono" style="font-size:14px">· {{ r.asset }}</span></h1>
+
+<div class="grid" style="grid-template-columns:2fr 1fr">
+  <div class="panel">
+    <div class="label">Probable root cause</div>
+    <div style="margin:6px 0 12px">
+      <span class="badge" style="font-size:14px;color:{{ cat_color(r.root_cause_category) }}">
+        {{ r.root_cause_category }}</span>
+      {% if r.blocked %}<span class="pill blocked">GATED — data untrusted</span>{% endif %}
+    </div>
+    <div>{{ r.root_cause }}</div>
+    <div class="conf" style="margin-top:14px">
+      <span class="label">Confidence</span>
+      <div class="meter"><i style="width:{{ (r.confidence*100)|round(0,'floor') }}%"></i></div>
+      <span class="mono">{{ (r.confidence*100)|round(0,'floor') }}%</span>
+    </div>
+    <div class="muted mono" style="font-size:11px;margin-top:10px">
+      engine {{ r.engine }} · prompt {{ r.prompt_version }} ·
+      window {{ r.window_start[:16] }} → {{ r.window_end[:16] }}
+    </div>
+  </div>
+  <div class="panel">
+    <div class="label">Data reliability</div>
+    <div class="stat small" style="color:{{ 'var(--crit)' if rel.blocked else 'var(--ok)' }}">
+      {{ (rel.overall*100)|round(0,'floor') }}%</div>
+    {% for name, s in rel.sources.items() %}
+      <div style="margin-top:8px"><span class="mono">{{ name }}</span>
+        <div class="meter" style="margin-top:3px"><i style="width:{{ (s.score*100)|round(0,'floor') }}%"></i></div>
+        <div class="muted" style="font-size:11px">{{ s.detail }}</div></div>
+    {% endfor %}
+  </div>
+</div>
+
+<h2>Timeline</h2>
+<div class="panel">
+  {% if r.timeline %}
+  <ul class="rail">
+    {% for t in r.timeline %}
+    <li class="sev-{{ t.severity }}">
+      <span class="ts mono">{{ t.ts[11:19] }}</span>
+      <span class="sev-{{ t.severity }}">{{ t.description }}</span>
+      {% if t.signal %}<span class="chip">{{ t.signal }}</span>{% endif %}
+      {% for e in t.evidence_ids %}<span class="chip mono">{{ e }}</span>{% endfor %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}<div class="muted">No timeline — reconstruction was gated.</div>{% endif %}
+</div>
+
+<div class="grid" style="grid-template-columns:1fr 1fr">
+  <div>
+    <h2>Supporting evidence</h2>
+    <div class="panel">
+      {% for e in r.supporting_evidence %}
+        <div style="margin-bottom:7px"><span class="chip mono">{{ e.id }}</span>
+          <span class="muted">[{{ e.kind }}]</span> {{ e.summary }}</div>
+      {% else %}<span class="muted">none</span>{% endfor %}
+    </div>
+  </div>
+  <div>
+    <h2>Missing evidence</h2>
+    <div class="panel warnbox">
+      {% if r.missing_evidence %}<ul class="clean">
+        {% for m in r.missing_evidence %}<li>{{ m }}</li>{% endfor %}</ul>
+      {% else %}<span class="muted">nothing outstanding</span>{% endif %}
+    </div>
+    <h2>Recommended actions</h2>
+    <div class="panel"><ul class="clean">
+      {% for a in r.recommended_actions %}<li>{{ a }}</li>{% endfor %}</ul></div>
+  </div>
+</div>
+
+{% if r.similar_incidents %}
+<h2>Similar prior incidents</h2>
+<div class="panel mono">
+  {% for s in r.similar_incidents %}<span class="chip">{{ s }}</span>{% endfor %}
+</div>
+{% endif %}
+{% endblock %}
