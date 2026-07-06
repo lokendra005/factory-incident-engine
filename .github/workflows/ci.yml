@@ -1,0 +1,27 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -r requirements.txt
+      - name: Unit + integration tests
+        run: python -m pytest -q
+      - name: Evaluation gate (fails the build on any regression)
+        run: python -m fie.cli eval
+      - name: End-to-end demo smoke
+        run: python -m fie.cli demo
+      - name: Regression report
+        run: python -m fie.cli regression
