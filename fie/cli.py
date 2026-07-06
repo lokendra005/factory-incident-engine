@@ -169,6 +169,28 @@ def cmd_status(args) -> int:
     return 0
 
 
+def cmd_generate_dataset(args) -> int:
+    from .ml import generate_dataset
+    _hr("GENERATE DATASET")
+    X, y, rows = generate_dataset(n_per_class=args.n_per_class, seed=args.seed)
+    from collections import Counter
+    print(f"generated {len(rows)} labeled samples "
+          f"({args.n_per_class}/class) -> {config.DATASET_DIR}/train.jsonl")
+    print(f"class balance: {dict(Counter(y))}")
+    return 0
+
+
+def cmd_train(args) -> int:
+    from .ml import train_model
+    _hr("TRAIN ML ENGINE")
+    res = train_model(n_per_class=args.n_per_class, seed=args.seed)
+    print(f"model {res['version']}: trained on {res['n_train']} samples, "
+          f"held-out accuracy {res['val_accuracy']:.1%}")
+    print(f"saved -> {res['path']}")
+    print("now usable as:  fie eval --engine ml   |   fie reconstruct-all --engine ml")
+    return 0
+
+
 def cmd_serve(args) -> int:
     from .web.server import serve
     serve(host=args.host, port=args.port)
@@ -262,6 +284,14 @@ def build_parser() -> argparse.ArgumentParser:
     s.set_defaults(func=cmd_regression)
 
     sub.add_parser("status").set_defaults(func=cmd_status)
+
+    s = sub.add_parser("generate-dataset")
+    s.add_argument("--n-per-class", type=int, default=300); s.add_argument("--seed", type=int, default=13)
+    s.set_defaults(func=cmd_generate_dataset)
+
+    s = sub.add_parser("train")
+    s.add_argument("--n-per-class", type=int, default=300); s.add_argument("--seed", type=int, default=13)
+    s.set_defaults(func=cmd_train)
 
     s = sub.add_parser("serve")
     s.add_argument("--host", default="127.0.0.1"); s.add_argument("--port", type=int, default=8000)

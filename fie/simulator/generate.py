@@ -147,6 +147,34 @@ def build_bundle(sc: Scenario, base: datetime | None = None,
 
 
 # --------------------------------------------------------------------------
+# Variants (for generating a large training dataset)
+# --------------------------------------------------------------------------
+
+def build_variant(sc: Scenario, rng: random.Random, idx: int) -> tuple[EvidenceBundle, str]:
+    """A jittered instance of a scenario: perturbed effect magnitudes, duration,
+    timing, and start time — but the same category signature. This is what turns
+    8 archetypes into a large, varied labeled dataset without changing labels."""
+    import dataclasses
+
+    dur = max(15, int(sc.duration_min * rng.uniform(0.7, 1.3)))
+    new_effects = []
+    for e in sc.effects:
+        target = e.target
+        if e.mode in ("linear", "step_at", "spike_at") and e.target:
+            target = round(e.target * rng.uniform(0.85, 1.15), 3)
+        at_min = e.at_min
+        if e.mode in ("step_at", "spike_at"):
+            at_min = max(1, min(dur - 1, int(dur * rng.uniform(0.2, 0.5))))
+        new_effects.append(dataclasses.replace(e, target=target, at_min=at_min))
+
+    variant = dataclasses.replace(
+        sc, key=f"{sc.key}::v{idx}", duration_min=dur, effects=new_effects)
+    base = BASE + timedelta(hours=rng.randint(0, 6000), minutes=rng.randint(0, 59))
+    bundle, _labels = build_bundle(variant, base=base, with_priors=False)
+    return bundle, sc.category
+
+
+# --------------------------------------------------------------------------
 # Messy raw feed (for the ingest->store demo path)
 # --------------------------------------------------------------------------
 

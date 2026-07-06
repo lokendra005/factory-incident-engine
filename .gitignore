@@ -5,6 +5,8 @@
 *.db-shm
 /data/raw/
 /data/runs/
+/data/models/
+/data/dataset/
 /var/
 __pycache__/
 *.pyc
