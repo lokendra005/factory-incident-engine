@@ -2,6 +2,16 @@
 {% block body %}
 <h1>Control Room</h1>
 
+<div class="hero">
+  <b>Factory Incident Engine</b> — reconstructs machine incidents from messy plant
+  telemetry, with a data-quality gate that makes the agent abstain when data can't
+  be trusted, an evaluation harness, and deterministic replay to prove a change is
+  safe before shipping.
+  <p>New here? Open the <a href="/console">Console</a> and click
+    <b>Run full demo</b> to build everything from scratch, then come back here to
+    explore the incidents and the <a href="/regression">regression verdict</a>.</p>
+</div>
+
 <div class="pipe">
   {% for name, sub in pipeline %}
   <div class="step"><b>{{ name }}</b><span>{{ sub }}</span></div>

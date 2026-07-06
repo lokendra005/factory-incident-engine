@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}Console · Factory Incident Engine{% endblock %}
+{% block body %}
+<h1>Console</h1>
+<p class="muted">Run the pipeline live and watch the output — the same commands
+the CLI runs, executed server-side. Start with <b>Run full demo</b> to build
+everything from scratch, then explore the
+<a href="/">Control Room</a>.</p>
+
+<div class="panel" style="border-color:var(--accent);margin-bottom:16px">
+  <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+    <button class="primary" style="font-size:15px;padding:10px 18px"
+            onclick="run('demo',{},this)">▶ Run full demo</button>
+    <span class="hint">simulate → ingest → recover DLQ → reconstruct → evaluate →
+      replay → persist (~2s, resets the store)</span>
+  </div>
+</div>
+
+<div class="console-grid">
+  <div class="action-card">
+    <b>1 · Simulate</b><span class="hint">write a messy plant feed + golden set</span>
+    <button onclick="run('simulate',{},this)">Run</button>
+  </div>
+  <div class="action-card">
+    <b>2 · Ingest</b><span class="hint">validate / dedupe / DLQ / drift / checkpoint</span>
+    <button onclick="run('ingest',{},this)">Run</button>
+  </div>
+  <div class="action-card">
+    <b>3 · Recover DLQ</b><span class="hint">remap upstream rename → replay dead letters</span>
+    <button onclick="run('recover-dlq',{},this)">Run</button>
+  </div>
+  <div class="action-card">
+    <b>4 · Reconstruct all</b><span class="hint">every incident window</span>
+    <div class="row">
+      <select id="rc-engine">
+        <option>rule-based/1.2.0</option><option>rule-based/1.1.0</option>
+        <option>ml</option><option>grok</option><option>claude</option>
+      </select>
+      <button onclick="run('reconstruct-all',{engine:val('rc-engine')},this)">Run</button>
+    </div>
+  </div>
+  <div class="action-card">
+    <b>5 · Evaluate</b><span class="hint">score an engine on the golden set</span>
+    <div class="row">
+      <select id="ev-engine">
+        <option>rule-based/1.2.0</option><option>rule-based/1.1.0</option>
+        <option>ml</option>
+      </select>
+      <button onclick="run('eval',{engine:val('ev-engine')},this)">Run</button>
+    </div>
+  </div>
+  <div class="action-card">
+    <b>6 · Regression</b><span class="hint">baseline → candidate → SHIP/HOLD</span>
+    <div class="row">
+      <select id="rg-base"><option>rule-based/1.1.0</option><option>rule-based/1.2.0</option><option>ml</option></select>
+      <select id="rg-cand"><option>rule-based/1.2.0</option><option>rule-based/1.1.0</option><option>ml</option></select>
+      <button onclick="run('regression',{baseline:val('rg-base'),candidate:val('rg-cand')},this)">Run</button>
+    </div>
+  </div>
+  <div class="action-card">
+    <b>Train ML engine</b><span class="hint">generate dataset + train classifier</span>
+    <div class="row">
+      <select id="tr-n"><option value="150">150/class (fast)</option>
+        <option value="300">300/class</option><option value="500">500/class</option></select>
+      <button onclick="run('train',{n_per_class:val('tr-n')},this)">Train</button>
+    </div>
+  </div>
+  <div class="action-card">
+    <b>Status</b><span class="hint">store + data-quality snapshot</span>
+    <button onclick="run('status',{},this)">Run</button>
+  </div>
+</div>
+
+<h2>Output</h2>
+<pre class="term" id="out">Ready. Click an action above.</pre>
+<p class="hint" id="after" style="display:none">
+  Done — open the <a href="/">Control Room</a> or
+  <a href="/regression">Replay / Regression</a> to see the results.</p>
+
+<script>
+function val(id){ return document.getElementById(id).value; }
+async function run(action, params, btn){
+  const out = document.getElementById('out');
+  const after = document.getElementById('after');
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach(b => b.disabled = true);
+  const label = btn ? btn.textContent : action;
+  out.textContent = '▶ running: ' + action + (Object.keys(params).length? ' ' + JSON.stringify(params):'') + ' …\n';
+  after.style.display = 'none';
+  try {
+    const res = await fetch('/api/run', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({action, params})
+    });
+    const data = await res.json();
+    out.textContent = data.log || '(no output)';
+    out.scrollTop = out.scrollHeight;
+    if (data.ok) after.style.display = '';
+  } catch (e) {
+    out.textContent = 'request failed: ' + e;
+  } finally {
+    buttons.forEach(b => b.disabled = false);
+  }
+}
+</script>
+{% endblock %}
