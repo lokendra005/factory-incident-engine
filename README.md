@@ -92,14 +92,16 @@ See [`docs/failure-model.md`](docs/failure-model.md).
 ## The control-room UI (`make serve`)
 
 An interactive, zero-dependency UI (stdlib `http.server` + vanilla JS, no build
-step) that *drives* the machinery, not just displays it.
+step) that *drives* the machinery, not just displays it. The whole loop, from the
+browser:
 
-**Console** — run any pipeline stage (or the whole demo) live from the browser
-and watch the output; the same commands the CLI runs, executed server-side.
-Great for a walkthrough: click **Run full demo** to build everything from
-scratch, then explore.
+![Live demo](docs/screenshots/demo.gif)
 
-![Console](docs/screenshots/console.png)
+**Console** — run any pipeline stage (or the whole demo) live and watch the
+output; the same commands the CLI runs, executed server-side. Click **Run full
+demo** to build everything from scratch, then explore.
+
+![Console](docs/screenshots/console_run.png)
 
 **Control room** — pipeline overview, the data-reliability **gate** (note the two
 `BLOCKED` windows where the agent refuses to act on sparse telemetry), and every
