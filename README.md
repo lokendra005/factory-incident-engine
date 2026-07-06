@@ -96,7 +96,7 @@ pip install -e .                   # installs the `fie` command (pydantic + jinj
 # or: pip install -r requirements.txt   # deps only; then use `python -m fie.cli ...`
 make demo                          # the whole loop, ~2s, fully offline
 make serve                         # control-room UI
-make test                          # 38 tests
+make test                          # 41 tests
 ```
 
 > Every `fie <cmd>` below also works as `python -m fie.cli <cmd>` without
@@ -114,7 +114,17 @@ Individual stages are separate commands too:
 fie simulate --reset       fie ingest        fie recover-dlq
 fie reconstruct-all        fie status        fie eval
 fie regression --baseline rule-based/1.1.0 --candidate rule-based/1.2.0
+
+# swappable backends (same eval/replay harness scores all of them)
+fie generate-dataset --n-per-class 500     # build a large labeled dataset
+fie train --n-per-class 500                # train the ML engine -> data/models/
+fie eval --engine ml                       # score the trained classifier
+export XAI_API_KEY=...                      # free key from https://console.x.ai
+fie reconstruct-all --engine grok          # or --engine claude (ANTHROPIC_API_KEY)
 ```
+
+Every LLM/ML path falls back to the deterministic rule engine on any error, so
+the demo, tests, and CI never require a key or a network.
 
 ## Architecture
 
@@ -124,7 +134,8 @@ fie regression --baseline rule-based/1.1.0 --candidate rule-based/1.2.0
 | Ingestion | `fie/ingestion/` | Validate → dedupe → DLQ → schema-drift → normalize; crash-safe checkpoints |
 | Store | `fie/store.py` | Normalized SQLite (Postgres-compatible DDL); idempotent upserts |
 | Reliability | `fie/reliability.py` | Per-source score + deployment **gate** |
-| Agent | `fie/agent/` | Toolbox + rule-based engine (v1.1/v1.2) + optional Claude backend |
+| Agent | `fie/agent/` | Toolbox + 3 interchangeable engines: rule-based (v1.1/v1.2), trained ML classifier, and LLM (Grok/Claude) |
+| ML | `fie/ml/` | Dataset generation + training for the ML engine (shared feature extractor → no train/serve skew) |
 | Evaluation | `fie/eval/` | Golden set + correctness / groundedness / timeline / tool-usage / abstention |
 | Replay | `fie/replay/` | Deterministic replay of captured traces + regression report |
 | UI | `fie/web/` | Zero-dependency control room (stdlib `http.server`) |
@@ -133,15 +144,22 @@ Deeper notes in [`docs/`](docs): [architecture](docs/architecture.md) ·
 [data model](docs/data-model.md) · [evaluation](docs/evaluation.md) ·
 [failure model](docs/failure-model.md).
 
+A full study + interview-prep knowledge base lives in [`prep/`](prep) — concept
+guides, a code walkthrough, a "how to change X" cookbook, and interview drills.
+
 ## Design decisions worth defending
 
 - **The engine is a pure function of an `EvidenceBundle`.** That purity is what
   makes replay deterministic and evaluation reproducible.
 - **The gate can veto the agent.** Below a reliability threshold, reconstruction
   returns `blocked` with an explanation instead of a guess. Judgment > coverage.
-- **Claude is optional, never required.** With `ANTHROPIC_API_KEY` set the agent
-  uses `claude-opus-4-8` through the same toolbox and grounding contract; without
-  it, the deterministic engine runs. Tests and CI never touch the network.
+- **The reasoning backend is a one-flag swap.** The same reconstruction contract
+  is served by a deterministic rule engine (default), a trained sklearn
+  classifier (`--engine ml`), or an LLM — **Grok** (xAI, OpenAI-compatible, works
+  with the free key) or **Claude**. Choosing one is a deployment decision, not a
+  rewrite, and all are scored by the same eval + replay harness. Every LLM/ML path
+  falls back to the rule engine on any error, so tests and CI never touch the
+  network.
 - **Nothing is silently dropped.** Every rejected record lands in the DLQ with a
   machine-readable reason and can be replayed after a fix.
 
