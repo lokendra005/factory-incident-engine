@@ -7,6 +7,22 @@
 their snapshotted inputs, not live data — so the diff is attributable purely to
 the engine change.</p>
 
+<form class="controls" method="get" action="/regression">
+  <span class="hint">baseline</span>
+  <select name="baseline">
+    {% for opt in engine_options %}
+    <option value="{{ opt }}"{% if opt == baseline %} selected{% endif %}>{{ opt }}</option>
+    {% endfor %}
+  </select>
+  <span class="hint">→ candidate</span>
+  <select name="candidate">
+    {% for opt in engine_options %}
+    <option value="{{ opt }}"{% if opt == candidate %} selected{% endif %}>{{ opt }}</option>
+    {% endfor %}
+  </select>
+  <button class="primary" type="submit">Run replay ▸</button>
+</form>
+
 <div class="grid cards">
   <div class="panel"><div class="label">Baseline</div>
     <div class="stat small mono">{{ rep.old_engine }}</div>

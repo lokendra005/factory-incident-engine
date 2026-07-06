@@ -86,7 +86,8 @@ def reconstruct(bundle: EvidenceBundle, engine=None, store: Optional[Store] = No
 
 def reconstruct_from_store(store: Store, asset: str, window_start: str,
                            window_end: str, engine=None,
-                           maint_lookback_days: int = 120) -> RunTrace:
+                           maint_lookback_days: int = 120,
+                           persist: bool = True) -> RunTrace:
     since = (datetime.fromisoformat(window_start)
              - timedelta(days=maint_lookback_days)).isoformat()
     bundle = EvidenceBundle(
@@ -96,7 +97,11 @@ def reconstruct_from_store(store: Store, asset: str, window_start: str,
         mes=store.query_mes(asset, window_start, window_end),
         past_incidents=store.prior_incidents(asset, window_start),
     )
-    return reconstruct(bundle, engine=engine, store=store)
+    # persist=False -> a live "what would engine X say?" run for the UI that
+    # does not overwrite the canonical stored incident.
+    if persist:
+        return reconstruct(bundle, engine=engine, store=store)
+    return reconstruct(bundle, engine=engine, store=None, save=False)
 
 
 # --------------------------------------------------------------------------

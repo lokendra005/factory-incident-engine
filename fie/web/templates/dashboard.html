@@ -2,6 +2,12 @@
 {% block body %}
 <h1>Control Room</h1>
 
+<div class="pipe">
+  {% for name, sub in pipeline %}
+  <div class="step"><b>{{ name }}</b><span>{{ sub }}</span></div>
+  {% endfor %}
+</div>
+
 {% if counts.telemetry == 0 %}
   <div class="panel warnbox">No data yet. Run <code>fie demo</code> (or
   <code>make demo</code>) to simulate a plant feed, ingest it, and reconstruct
@@ -16,7 +22,11 @@
   <div class="panel"><div class="label">Dead-lettered</div>
     <div class="stat" style="color:var(--warn)">{{ counts.dlq }}</div>
     <div class="muted mono" style="font-size:11px">
-      {% for k,v in dlq.items() %}{{k}}:{{v}} {% endfor %}</div></div>
+      {% for k,v in dlq.items() %}{{k}}:{{v}} {% endfor %}</div>
+    {% if counts.dlq > 0 %}
+    <form method="post" action="/actions/recover-dlq" style="margin-top:8px">
+      <button type="submit">↻ Recover dead letters</button>
+    </form>{% endif %}</div>
   <div class="panel"><div class="label">Schema drift</div>
     <div class="stat">{{ drift|length }}</div>
     <div class="muted mono" style="font-size:11px">

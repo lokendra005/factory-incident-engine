@@ -4,6 +4,18 @@
 <p class="muted"><a href="/">← Control Room</a></p>
 <h1>{{ r.incident_id }} <span class="muted mono" style="font-size:14px">· {{ r.asset }}</span></h1>
 
+<form class="controls" method="get" action="/incident/{{ r.incident_id }}">
+  <span class="hint">Reconstruct with engine:</span>
+  <select name="engine">
+    {% for opt in engine_options %}
+    <option value="{{ opt }}"{% if opt == selected_engine %} selected{% endif %}>{{ opt }}</option>
+    {% endfor %}
+  </select>
+  <button class="primary" type="submit">Re-run ▸</button>
+  <span class="hint">ran: <span class="mono">{{ r.engine }}</span> — switch to
+    <span class="mono">rule-based/1.1.0</span> to see the documented bug live</span>
+</form>
+
 <div class="grid" style="grid-template-columns:2fr 1fr">
   <div class="panel">
     <div class="label">Probable root cause</div>
@@ -34,6 +46,9 @@
     {% endfor %}
   </div>
 </div>
+
+<h2>Telemetry — signals across the window</h2>
+<div class="charts">{{ charts_html|safe }}</div>
 
 <h2>Timeline</h2>
 <div class="panel">
