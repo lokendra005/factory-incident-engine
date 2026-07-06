@@ -68,12 +68,25 @@ MAX_GAP_RATIO = 0.15
 STALE_SAMPLES = 5
 
 # --- agent backend ---------------------------------------------------------
-# "auto" uses Claude when ANTHROPIC_API_KEY + anthropic SDK are available,
-# otherwise the deterministic rule-based engine. Force with FIE_ENGINE.
-ENGINE = os.environ.get("FIE_ENGINE", "auto")   # auto | rule | claude
+# "auto" resolution order: an explicit FIE_ENGINE wins; else Grok if an xAI key
+# is present; else Claude if an Anthropic key is present; else the deterministic
+# rule-based engine. Every LLM path falls back to rule-based on any error, so
+# the demo/eval/CI never require a network or a key.
+#   values: auto | rule | rule-1.1 | claude | grok | ml
+ENGINE = os.environ.get("FIE_ENGINE", "auto")
 CLAUDE_MODEL = os.environ.get("FIE_CLAUDE_MODEL", "claude-opus-4-8")
+
+# Grok / xAI (OpenAI-compatible REST API — no SDK needed, just httpx).
+# Get a free key at https://console.x.ai and export it:  export XAI_API_KEY=...
+# Model names change; check the console and override with FIE_GROK_MODEL.
+GROK_MODEL = os.environ.get("FIE_GROK_MODEL", "grok-2-latest")
+GROK_BASE_URL = os.environ.get("FIE_GROK_BASE_URL", "https://api.x.ai/v1")
+
+# Where trained ML models are stored (see fie/ml/).
+MODELS_DIR = DATA_DIR / "models"
+DATASET_DIR = DATA_DIR / "dataset"
 
 
 def ensure_dirs() -> None:
-    for d in (DATA_DIR, RAW_DIR, RUNS_DIR, GOLDEN_DIR):
+    for d in (DATA_DIR, RAW_DIR, RUNS_DIR, GOLDEN_DIR, MODELS_DIR, DATASET_DIR):
         d.mkdir(parents=True, exist_ok=True)

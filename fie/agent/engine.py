@@ -70,6 +70,36 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def build_timeline(stats: dict, mes: list) -> list[TimelineEntry]:
+    """Shared timeline construction — used by the rule engine and the ML engine
+    so a diagnosis renders identically regardless of how the category was chosen."""
+    timeline: list[TimelineEntry] = []
+    interesting = {
+        "spindle_temp_c": ("Spindle temperature", "warn"),
+        "coolant_flow_lpm": ("Coolant flow", "warn"),
+        "vibration_mm_s": ("Vibration", "warn"),
+        "defect_rate_pct": ("Defect rate", "warn"),
+        "spindle_load_pct": ("Spindle load", "info"),
+    }
+    for sig, (label, sev) in interesting.items():
+        st = stats.get(sig)
+        if st and st.n and abs(st.delta) >= 0.25 * (abs(st.baseline) + 1e-6) and st.first_anomaly_ts:
+            arrow = "rose" if st.delta > 0 else "fell"
+            timeline.append(TimelineEntry(
+                ts=st.first_anomaly_ts, signal=sig, severity=sev,
+                description=f"{label} {arrow} from {st.baseline} to {st.end}.",
+                evidence_ids=st.evidence_ids))
+    for e in mes:
+        sev = "critical" if e.event == "shutdown" else (
+            "warn" if e.event in ("error_code", "config_change") else "info")
+        timeline.append(TimelineEntry(
+            ts=e.ts, severity=sev,
+            description=f"MES {e.event}: {e.detail or e.code}".strip(),
+            evidence_ids=[e.id]))
+    timeline.sort(key=lambda t: t.ts)
+    return timeline
+
+
 class RuleBasedEngine:
     def __init__(self, version: str = "1.2.0"):
         self.version = version
@@ -167,31 +197,7 @@ class RuleBasedEngine:
         category, root_cause = self._classify(stats, has_config)
         similar = tb.find_similar_incidents(category)
 
-        # ---- timeline ----
-        timeline: list[TimelineEntry] = []
-        interesting = {
-            "spindle_temp_c": ("Spindle temperature", "warn"),
-            "coolant_flow_lpm": ("Coolant flow", "warn"),
-            "vibration_mm_s": ("Vibration", "warn"),
-            "defect_rate_pct": ("Defect rate", "warn"),
-            "spindle_load_pct": ("Spindle load", "info"),
-        }
-        for sig, (label, sev) in interesting.items():
-            st = stats[sig]
-            if st.n and abs(st.delta) >= 0.25 * (abs(st.baseline) + 1e-6) and st.first_anomaly_ts:
-                arrow = "rose" if st.delta > 0 else "fell"
-                timeline.append(TimelineEntry(
-                    ts=st.first_anomaly_ts, signal=sig, severity=sev,
-                    description=f"{label} {arrow} from {st.baseline} to {st.end}.",
-                    evidence_ids=st.evidence_ids))
-        for e in mes:
-            sev = "critical" if e.event == "shutdown" else (
-                "warn" if e.event in ("error_code", "config_change") else "info")
-            timeline.append(TimelineEntry(
-                ts=e.ts, severity=sev,
-                description=f"MES {e.event}: {e.detail or e.code}".strip(),
-                evidence_ids=[e.id]))
-        timeline.sort(key=lambda t: t.ts)
+        timeline = build_timeline(stats, mes)
 
         # ---- supporting evidence (grounding) ----
         ev_ids: list[str] = []
@@ -262,7 +268,15 @@ ENGINES = {
 
 
 def get_engine(name: str | None = None):
-    """Resolve an engine. 'auto' uses Claude when available, else rule 1.2.0."""
+    """Resolve an engine by name.
+
+    auto  -> Grok if an xAI key is set, else Claude if an Anthropic key is set,
+             else the deterministic rule engine.
+    rule / rule-1.1 / rule-based/x.y.z -> deterministic engines.
+    grok / claude -> the LLM backend (falls back to rule on any failure).
+    ml    -> the trained sklearn classifier engine (falls back to rule if no
+             model file / sklearn is present).
+    """
     from .. import config
     name = name or config.ENGINE
 
@@ -273,14 +287,29 @@ def get_engine(name: str | None = None):
     if name in ("rule-1.1", "1.1"):
         return RuleBasedEngine("1.1.0")
 
-    if name in ("claude", "auto"):
+    if name == "ml":
         try:
-            from .claude_engine import ClaudeEngine, claude_available
+            from .ml_engine import MLEngine
+            return MLEngine()
+        except Exception:
+            return RuleBasedEngine("1.2.0")
+
+    if name in ("grok", "claude", "auto"):
+        try:
+            from .llm import ClaudeEngine, GrokEngine, claude_available, grok_available
+            if name == "grok":
+                eng = GrokEngine()
+                return eng if eng.available() else RuleBasedEngine("1.2.0")
+            if name == "claude":
+                eng = ClaudeEngine()
+                return eng if eng.available() else RuleBasedEngine("1.2.0")
+            # auto
+            if grok_available():
+                return GrokEngine()
             if claude_available():
                 return ClaudeEngine()
         except Exception:
             pass
-        # graceful fallback: the deterministic engine
         return RuleBasedEngine("1.2.0")
 
     return RuleBasedEngine("1.2.0")
