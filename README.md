@@ -89,6 +89,34 @@ See [`docs/failure-model.md`](docs/failure-model.md).
 7. FINALIZE     persist incidents for the UI
 ```
 
+## The control-room UI (`make serve`)
+
+An interactive, zero-dependency UI (stdlib `http.server`) that *drives* the
+machinery, not just displays it.
+
+**Control room** — pipeline overview, the data-reliability **gate** (note the two
+`BLOCKED` windows where the agent refuses to act on sparse telemetry), and every
+reconstructed incident:
+
+![Control room](docs/screenshots/dashboard.png)
+
+**Incident** — server-rendered telemetry charts (you can *see* the failure
+signature), grounded evidence, timeline, reliability, and an **engine switcher**
+that re-runs reconstruction live. Here the fixed engine correctly calls it a
+**sensor fault** — temperature steps up while coolant flow stays nominal:
+
+![Incident, v1.2 correct](docs/screenshots/incident_v12.png)
+
+Switch the engine dropdown to `rule-based/1.1.0` and the **documented bug**
+appears live — the same evidence is now misdiagnosed as cooling degradation:
+
+![Incident, v1.1 bug](docs/screenshots/incident_v11_bug.png)
+
+**Replay / regression** — pick any baseline and candidate engine and run the diff
+on demand → SHIP/HOLD:
+
+![Regression](docs/screenshots/regression.png)
+
 ## Quickstart
 
 ```bash
