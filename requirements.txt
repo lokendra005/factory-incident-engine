@@ -1,11 +1,21 @@
-# Core runtime. The engine runs fully offline with ONLY these deps.
+# ---- Core runtime (ingest, gate, reconstruct, eval, replay, web UI) ----
+# The CORE engine runs fully offline with ONLY these two. Everything below is
+# for the optional ML training tracks / LLM backends and is not needed to run
+# `make demo`, the reconstruction engine, or the UI.
 pydantic>=2.6
 jinja2>=3.1
 
-# Optional: the Claude reasoning backend. If `anthropic` is absent or no
-# API key is set, the agent transparently falls back to the deterministic
-# rule-based engine (see fie/agent/engine.py). The demo + eval never require it.
+# ---- ML training track (fie train, --engine ml, AI4I + Azure PdM loaders) ----
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.24
+joblib>=1.3
+
+# ---- Grok (xAI) LLM backend (optional; falls back to rule without a key) ----
+httpx>=0.27
+
+# ---- Claude LLM backend (optional) ----
 # anthropic>=0.40
 
-# Dev / test
+# ---- Dev / test ----
 pytest>=8.0

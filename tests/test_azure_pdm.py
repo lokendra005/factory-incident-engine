@@ -3,8 +3,13 @@ import csv
 import random
 from datetime import datetime, timedelta
 
-from fie.ml.azure_pdm import SIGNALS, load_azure_pdm
-from fie.ml.train import train_external
+import pytest
+
+pytest.importorskip("pandas")
+pytest.importorskip("sklearn")
+
+from fie.ml.azure_pdm import SIGNALS, load_azure_pdm      # noqa: E402
+from fie.ml.train import train_external                   # noqa: E402
 
 
 def _write_fixture(d):

@@ -20,6 +20,8 @@ def test_claude_falls_back_without_key():
 
 
 def test_ml_engine_trains_scores_and_serves():
+    import pytest
+    pytest.importorskip("sklearn")
     from fie.ml.train import train_model
     from fie.eval import evaluate
     from fie.agent.reconstruct import reconstruct

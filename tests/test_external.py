@@ -6,8 +6,14 @@ are verified without needing the actual Kaggle download.
 import csv
 import random
 
-from fie.ml.external import AI4I_FEATURES, load_ai4i
-from fie.ml.train import load_latest, train_external
+import pytest
+
+# the ML track needs pandas + scikit-learn; skip cleanly on a core-only install
+pytest.importorskip("pandas")
+pytest.importorskip("sklearn")
+
+from fie.ml.external import AI4I_FEATURES, load_ai4i        # noqa: E402
+from fie.ml.train import train_external                    # noqa: E402
 
 _COLS = ["UDI", "Product ID", "Type", "Air temperature [K]",
          "Process temperature [K]", "Rotational speed [rpm]", "Torque [Nm]",

@@ -129,12 +129,18 @@ on demand → SHIP/HOLD:
 ## Quickstart
 
 ```bash
-pip install -e .                   # installs the `fie` command (pydantic + jinja2)
-# or: pip install -r requirements.txt   # deps only; then use `python -m fie.cli ...`
+pip install -r requirements.txt    # core + ML track + test deps
 make demo                          # the whole loop, ~2s, fully offline
 make serve                         # control-room UI
-make test                          # 41 tests
+make test                          # 49 tests
 ```
+
+> **Dependencies:** the *core* engine (ingest → gate → reconstruct → eval →
+> replay → UI) needs only **pydantic + jinja2** — that's what
+> `pip install -e .` installs. The optional ML training tracks add
+> scikit-learn/pandas/numpy/joblib (`pip install -e ".[ml]"`), and the Grok
+> backend adds httpx (`".[grok]"`). `requirements.txt` bundles all of it so
+> `make demo`, `make test`, and CI work out of the box.
 
 > Every `fie <cmd>` below also works as `python -m fie.cli <cmd>` without
 > installing the package (that's what the Makefile uses).
