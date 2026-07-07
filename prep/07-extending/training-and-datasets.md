@@ -91,6 +91,42 @@ which is more valuable than "more data = better."
 - Because every LLM call falls back to the rule engine on error, a rate-limited
   or exhausted free key never breaks the demo — worth stating as a design choice.
 
+## Training on a real Kaggle dataset (wired: AI4I 2020)
+
+The training pipeline is no longer limited to synthetic data. There's a
+real-dataset track for the **AI4I 2020 Predictive Maintenance** benchmark
+(milling machine, 10k rows, five failure modes):
+
+```bash
+# download ai4i2020.csv from Kaggle/UCI (needs your login), then:
+fie train --source ai4i --csv path/to/ai4i2020.csv
+# mode-identification only (drop the ~96% no-failure rows):
+fie train --source ai4i --csv path/to/ai4i2020.csv --failures-only
+```
+
+- Loader: `fie/ml/external.py:load_ai4i` — maps the CSV to a feature vector
+  (type, air/process temp, temp difference, rpm, torque, mechanical power, tool
+  wear, overstrain proxy) and the five modes → readable labels.
+- It prints a **per-class precision/recall/F1 report**, not just accuracy — which
+  honestly exposes the severe class imbalance and the *unlearnable* `RNF` (random
+  failure) class (near-zero recall, by design — it has no signature). Being able
+  to point at that and explain it is worth more than a single accuracy number.
+- **Separate track by design.** AI4I lives in a different feature/label space
+  than your six-signal CNC bundles, so its model is saved as `ext-ai4i-*.joblib`
+  and is deliberately **not** loaded by the reconstruction MLEngine (which globs
+  `ml-*`). This avoids faking a mapping that would be train/serve skew in
+  disguise. The point it proves: *the training pipeline generalizes to a real
+  dataset.*
+
+### The full-integration option: Microsoft Azure PdM
+[kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance](https://www.kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance)
+is the dataset that actually matches this project's *shape* — telemetry +
+error logs + maintenance + failure labels per machine over time. Wiring it means
+mapping its five CSVs onto the canonical models and building windows around
+failures, so it feeds the **real ingestion + reconstruction pipeline** (not just
+a standalone classifier). Bigger job; it's the natural next step if you want the
+end-to-end real-data story.
+
 ## If an interviewer pushes: "so is this real ML or not?"
 
 > "The shipped default is deterministic rules, because with six well-understood

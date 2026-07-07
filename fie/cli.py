@@ -181,13 +181,30 @@ def cmd_generate_dataset(args) -> int:
 
 
 def cmd_train(args) -> int:
-    from .ml import train_model
+    from .ml import train_model, train_external
     _hr("TRAIN ML ENGINE")
-    res = train_model(n_per_class=args.n_per_class, seed=args.seed)
-    print(f"model {res['version']}: trained on {res['n_train']} samples, "
-          f"held-out accuracy {res['val_accuracy']:.1%}")
-    print(f"saved -> {res['path']}")
-    print("now usable as:  fie eval --engine ml   |   fie reconstruct-all --engine ml")
+    if args.source == "synthetic":
+        res = train_model(n_per_class=args.n_per_class, seed=args.seed)
+        print(f"model {res['version']}: trained on {res['n_train']} samples, "
+              f"held-out accuracy {res['val_accuracy']:.1%}")
+        print(f"saved -> {res['path']}")
+        print("now usable as:  fie eval --engine ml   |   fie reconstruct-all --engine ml")
+        return 0
+
+    # external real dataset (e.g. AI4I 2020)
+    if not args.csv:
+        print(f"--csv PATH is required for --source {args.source}")
+        return 1
+    res = train_external(args.source, args.csv, seed=args.seed,
+                         failures_only=args.failures_only)
+    print(f"[{args.source}] {res['n_samples']} samples, {len(res['classes'])} classes: "
+          f"{res['classes']}")
+    print(f"held-out accuracy {res['val_accuracy']:.1%}  (see per-class report below)")
+    print(f"saved -> {res['path']}\n")
+    print(res["report"])
+    print("NOTE: this is a separate real-dataset track. It demonstrates the "
+          "training pipeline on real data; it is NOT served by the incident "
+          "reconstruction engine (different feature/label space).")
     return 0
 
 
@@ -290,7 +307,13 @@ def build_parser() -> argparse.ArgumentParser:
     s.set_defaults(func=cmd_generate_dataset)
 
     s = sub.add_parser("train")
-    s.add_argument("--n-per-class", type=int, default=300); s.add_argument("--seed", type=int, default=13)
+    s.add_argument("--source", choices=["synthetic", "ai4i"], default="synthetic",
+                   help="synthetic generator (default) or a real dataset loader")
+    s.add_argument("--csv", default=None, help="path to the dataset CSV (for --source ai4i)")
+    s.add_argument("--failures-only", action="store_true",
+                   help="ai4i: train only on failure rows (mode identification)")
+    s.add_argument("--n-per-class", type=int, default=300)
+    s.add_argument("--seed", type=int, default=13)
     s.set_defaults(func=cmd_train)
 
     s = sub.add_parser("serve")
