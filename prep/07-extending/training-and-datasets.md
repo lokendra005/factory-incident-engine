@@ -118,14 +118,38 @@ fie train --source ai4i --csv path/to/ai4i2020.csv --failures-only
   disguise. The point it proves: *the training pipeline generalizes to a real
   dataset.*
 
-### The full-integration option: Microsoft Azure PdM
-[kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance](https://www.kaggle.com/datasets/arnabbiswas1/microsoft-azure-predictive-maintenance)
-is the dataset that actually matches this project's *shape* — telemetry +
-error logs + maintenance + failure labels per machine over time. Wiring it means
-mapping its five CSVs onto the canonical models and building windows around
-failures, so it feeds the **real ingestion + reconstruction pipeline** (not just
-a standalone classifier). Bigger job; it's the natural next step if you want the
-end-to-end real-data story.
+### Microsoft Azure PdM — the multi-source track (wired)
+The dataset that actually matches this project's *shape* — telemetry + error
+logs + maintenance + failure labels per machine over time. It's wired:
+
+```bash
+# download the 5 PdM_*.csv (public mirror, no login needed):
+#   https://raw.githubusercontent.com/ashishpatel26/\
+#   Predictive_Maintenance_using_Machine-Learning_Microsoft_Casestudy/master/data/
+fie train --source azure_pdm --data-dir path/to/azure_pdm/
+```
+
+`fie/ml/azure_pdm.py:load_azure_pdm` does the real data engineering:
+- **joins five source files** (telemetry, errors, maint, failures, machines);
+- builds a **labeled window around every failure** (the lookback hours ending at
+  the failure) plus sampled negative windows far from any failure;
+- engineers **temporal features**: per-signal statistics (volt/rotate/pressure/
+  vibration × mean/std/min/max), per-type **error counts** in the window,
+  **hours-since-last-replacement** for each of the four components, and machine
+  age/model — 27 features, label = the failed component.
+
+Real result (876,100 telemetry rows → 2,283 windows, ~4s):
+
+```
+[azure_pdm] 2283 samples, 27 features, 5 classes: comp1..comp4, none
+held-out accuracy 95.4%   macro-F1 0.90
+  comp1 F1 0.82 · comp2 0.87 · comp3 0.92 · comp4 0.90 · none 0.99
+```
+
+This is the strongest real-data story: a multi-source, temporal, balanced
+component-failure classifier at 0.90 macro-F1. It's still an `ext-*` track
+(component labels ≠ the CNC reconstruction categories), but it exercises the
+join + windowing + feature-engineering shape the whole project is about.
 
 ## If an interviewer pushes: "so is this real ML or not?"
 

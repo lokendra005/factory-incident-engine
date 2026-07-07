@@ -66,19 +66,27 @@ def train_model(n_per_class: int = 300, seed: int = 13,
     return _fit_and_save(X, y, FEATURE_NAMES, out, MODEL_VERSION, seed)
 
 
-def train_external(source: str, csv_path: str, seed: int = 13,
+def train_external(source: str, path: str, seed: int = 13,
                    failures_only: bool = False, out: Path | None = None) -> dict:
-    """Real-dataset track — e.g. AI4I 2020. Saved under ext-<source>-*.joblib."""
-    from .external import LOADERS
-    if source not in LOADERS:
+    """Real-dataset track (AI4I 2020, Azure PdM). Saved as ext-<source>-*.joblib.
+
+    `path` is a CSV file (ai4i) or a directory of the five CSVs (azure_pdm).
+    """
+    if source == "ai4i":
+        from .external import load_ai4i
+        X, y, feature_names = load_ai4i(path, failures_only=failures_only)
+    elif source == "azure_pdm":
+        from .azure_pdm import load_azure_pdm
+        X, y, feature_names = load_azure_pdm(path, seed=seed)
+    else:
         raise ValueError(f"unknown dataset source '{source}'; "
-                         f"available: {list(LOADERS)}")
-    X, y, feature_names = LOADERS[source](csv_path, failures_only=failures_only)
+                         f"available: ai4i, azure_pdm")
     version = f"{source}-1.0.0"
     out = Path(out or (config.MODELS_DIR / f"ext-{version}.joblib"))
     res = _fit_and_save(X, y, feature_names, out, version, seed)
     res["source"] = source
     res["n_samples"] = len(X)
+    res["n_features"] = len(feature_names)
     return res
 
 

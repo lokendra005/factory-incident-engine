@@ -191,14 +191,22 @@ def cmd_train(args) -> int:
         print("now usable as:  fie eval --engine ml   |   fie reconstruct-all --engine ml")
         return 0
 
-    # external real dataset (e.g. AI4I 2020)
-    if not args.csv:
-        print(f"--csv PATH is required for --source {args.source}")
-        return 1
-    res = train_external(args.source, args.csv, seed=args.seed,
+    # external real dataset (AI4I 2020 CSV, or Azure PdM directory)
+    if args.source == "azure_pdm":
+        if not args.data_dir:
+            print("--data-dir PATH (folder with the 5 PdM_*.csv files) is required "
+                  "for --source azure_pdm")
+            return 1
+        path = args.data_dir
+    else:
+        if not args.csv:
+            print(f"--csv PATH is required for --source {args.source}")
+            return 1
+        path = args.csv
+    res = train_external(args.source, path, seed=args.seed,
                          failures_only=args.failures_only)
-    print(f"[{args.source}] {res['n_samples']} samples, {len(res['classes'])} classes: "
-          f"{res['classes']}")
+    print(f"[{args.source}] {res['n_samples']} samples, {res['n_features']} features, "
+          f"{len(res['classes'])} classes: {res['classes']}")
     print(f"held-out accuracy {res['val_accuracy']:.1%}  (see per-class report below)")
     print(f"saved -> {res['path']}\n")
     print(res["report"])
@@ -307,9 +315,12 @@ def build_parser() -> argparse.ArgumentParser:
     s.set_defaults(func=cmd_generate_dataset)
 
     s = sub.add_parser("train")
-    s.add_argument("--source", choices=["synthetic", "ai4i"], default="synthetic",
+    s.add_argument("--source", choices=["synthetic", "ai4i", "azure_pdm"],
+                   default="synthetic",
                    help="synthetic generator (default) or a real dataset loader")
     s.add_argument("--csv", default=None, help="path to the dataset CSV (for --source ai4i)")
+    s.add_argument("--data-dir", default=None,
+                   help="folder with the 5 PdM_*.csv files (for --source azure_pdm)")
     s.add_argument("--failures-only", action="store_true",
                    help="ai4i: train only on failure rows (mode identification)")
     s.add_argument("--n-per-class", type=int, default=300)
