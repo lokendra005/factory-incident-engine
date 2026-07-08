@@ -38,6 +38,13 @@ dropped into a factory":
 | `06-interview-prep/` | The four questions, likely Q&A, decision defense, honest weaknesses |
 | `07-extending/` | Model backends (Grok/Claude/ML), training on large datasets, real-data scaling |
 
+## Most-used pages (start here for an interview)
+- [`06-interview-prep/opening-questions.md`](06-interview-prep/opening-questions.md) — what it does / why useful / what problem / what principle / how you got the idea, with a 60-second chained version.
+- [`06-interview-prep/the-four-questions.md`](06-interview-prep/the-four-questions.md) — show a failure / the eval / the metrics / a decision.
+- [`06-interview-prep/origin-story.md`](06-interview-prep/origin-story.md) — "why did this idea come to you?"
+- [`05-code-walkthrough/architecture-and-results.md`](05-code-walkthrough/architecture-and-results.md) — one-page architecture + all the test/eval numbers.
+- [`07-extending/training-and-datasets.md`](07-extending/training-and-datasets.md) & [`dataset-tracks-comparison.md`](07-extending/dataset-tracks-comparison.md) — the "train on a large dataset" answer + the 3 data tracks.
+
 ## The 90-second pitch (memorize this)
 
 > "It reconstructs manufacturing incidents from messy plant telemetry — but the
