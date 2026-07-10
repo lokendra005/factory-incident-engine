@@ -130,10 +130,18 @@ on demand → SHIP/HOLD:
 
 ```bash
 pip install -r requirements.txt    # core + ML track + test deps
+make start                         # build data if needed, then serve → http://127.0.0.1:8000
+make stop                          # stop the server
+
+# or run stages manually:
 make demo                          # the whole loop, ~2s, fully offline
-make serve                         # control-room UI
+make serve                         # serve (assumes data is already built)
 make test                          # 49 tests
 ```
+
+`make start` runs `scripts/start.sh` — it verifies the package, checks the port
+is free, builds the demo data on first run (`--fresh` to rebuild), then launches
+the UI. Stop it with `make stop` (or `scripts/stop.sh --port N`).
 
 > **Dependencies:** the *core* engine (ingest → gate → reconstruct → eval →
 > replay → UI) needs only **pydantic + jinja2** — that's what

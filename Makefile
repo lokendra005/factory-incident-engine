@@ -33,6 +33,12 @@ test:  ## run the test suite
 serve:  ## launch the web UI at http://127.0.0.1:8000
 	$(PY) -m fie.cli serve
 
+start:  ## proper startup: build data if needed, then serve the UI
+	./scripts/start.sh
+
+stop:  ## stop the running UI server (default port 8000)
+	./scripts/stop.sh
+
 clean:  ## remove generated data + caches
 	rm -rf data/raw data/runs data/golden data/*.db data/*.db-* \
 	       .pytest_cache **/__pycache__ 2>/dev/null || true
