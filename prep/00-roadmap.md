@@ -10,6 +10,52 @@ resources. Do the **Recall check** at the end of each day out loud.
 
 ---
 
+## Commands cheat-sheet (run anything in seconds)
+
+```bash
+# setup
+pip install -r requirements.txt        # core + ML track + tests
+
+# the whole story
+make demo                              # simulate→ingest→recover→reconstruct→eval→replay
+make serve                             # control-room UI at http://127.0.0.1:8000
+make test                              # 49 tests
+
+# individual stages  (every `fie <cmd>` also works as `python -m fie.cli <cmd>`)
+fie simulate --reset                   # write the messy raw feed + golden set
+fie ingest                             # ingest raw -> store (crash-safe, resumable)
+fie recover-dlq                        # re-drive dead-lettered records after a fix
+fie reconstruct-all                    # reconstruct every incident window
+fie reconstruct --asset CNC-17 --start <iso> --end <iso>   # one window
+fie status                             # store + data-quality snapshot
+fie eval                               # score the engine on the golden set (CI gate)
+fie regression --baseline rule-based/1.1.0 --candidate rule-based/1.2.0
+
+# backends (default is the rule engine; these fall back to it if unavailable)
+export XAI_API_KEY=...                  # free key from console.x.ai
+fie reconstruct-all --engine grok       # or --engine claude / --engine ml
+
+# train the ML engine
+fie train --n-per-class 500                                   # synthetic (served by UI)
+fie train --source ai4i --csv data/dataset/ai4i/ai4i2020.csv --failures-only
+fie train --source azure_pdm --data-dir data/dataset/azure_pdm/
+fie eval --engine ml
+```
+
+## Change / add / remove something? start here
+
+- **"I want to add / remove / change X"** → [`05-code-walkthrough/how-to-change-things.md`](05-code-walkthrough/how-to-change-things.md)
+  — the cookbook: add a signal, add a failure mode, tune the engine, change the
+  gate, add a tool, add an eval metric, swap SQLite→Postgres, add a CLI command,
+  use Grok, train the ML engine. Each entry says *which file to edit and what to
+  re-run*.
+- **"Which file does what"** → the file map at the **bottom of this doc**, and the
+  deeper tour in [`05-code-walkthrough/architecture-walkthrough.md`](05-code-walkthrough/architecture-walkthrough.md).
+- **"Golden rule" after any change:** `make test`; after a *behavior* change also
+  run `fie eval` (and `fie regression` if you touched an engine).
+
+---
+
 ## Day 1 — The shape of the system + data engineering core
 
 **Topics:** ETL/ingestion, canonical models, idempotency, exactly-once.
